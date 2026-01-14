@@ -11,7 +11,14 @@ type Props = {
 };
 
 export default function SocialButton({ name, url, type, delay = 0 }: Props) {
-  const IconComponent = type === 'github' ? SiGithub : type === 'discord' ? SiDiscord : type === 'wikipedia' ? SiWikipedia : MdEmail;
+  const iconMap = {
+    github: SiGithub,
+    discord: SiDiscord,
+    wikipedia: SiWikipedia,
+    email: MdEmail,
+  };
+  
+  const IconComponent = iconMap[type];
 
   return (
     <motion.a
