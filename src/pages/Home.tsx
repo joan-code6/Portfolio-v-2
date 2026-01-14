@@ -132,12 +132,13 @@ const Home = () => {
                   { name: 'GitHub', url: 'https://github.com/joan-code6', type: 'github' },
                   { name: 'Discord', url: 'https://discord.gg/HADC4eBJHR', type: 'discord' },
                   { name: 'Email', url: 'mailto:bennet-wegener@web.de', type: 'email' },
+                  { name: 'Wikipedia', url: 'https://en.wikipedia.org/wiki/Joke', type: 'wikipedia' },
                 ].map((social, index) => (
                   <SocialButton
                     key={social.name}
                     name={social.name}
                     url={social.url}
-                    type={social.type as 'github' | 'discord' | 'email'}
+                    type={social.type as 'github' | 'discord' | 'email' | 'wikipedia'}
                     delay={0.8 + index * 0.1}
                   />
                 ))}
