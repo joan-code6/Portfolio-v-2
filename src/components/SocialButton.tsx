@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import React from 'react';
 import { SiGithub, SiDiscord, SiWikipedia } from 'react-icons/si';
 import { MdEmail } from 'react-icons/md';
 
@@ -19,7 +18,7 @@ export default function SocialButton({ name, url, type, delay = 0 }: Props) {
       className="social-button"
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1, delay }}
       whileHover={{ y: -2 }}
       target="_blank"
       rel="noopener noreferrer"

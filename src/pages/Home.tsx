@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
-import ColorBends from '../components/ColorBends';
+import ColorBends from '../components/ColorBends.jsx';
 import SocialButton from '../components/SocialButton';
 import { SiPython, SiDart, SiReact, SiHtml5 } from 'react-icons/si';
 
