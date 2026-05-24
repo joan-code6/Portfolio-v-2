@@ -14,6 +14,7 @@ const pages = {
         <div class="portfolio-card">
           <div class="card-content">
             <div class="left-column">
+              <p class="home-summary" style="display:none">German student developer building open source AI tools, CLI apps, audio ML models, and Minecraft mods.</p>
               <div class="profile-pic">
                 <img src="https://avatars.githubusercontent.com/u/172996447" alt="Bennet Joan Wegener profile" class="profile-img" />
               </div>
@@ -22,9 +23,9 @@ const pages = {
                 <p class="handle">joan-code he/him</p>
               </div>
               <div class="info-section">
-                <div class="info-item"><span class="info-label">Location</span><span class="info-value">Germany</span></div>
-                <div class="info-item"><span class="info-label">Timezone</span><span class="info-value">CET (UTC+1)</span></div>
-                <div class="info-item"><span class="info-label">School</span><span class="info-value">Adolf Reichwein Gymnasium Heusenstamm</span></div>
+                <div class="info-item"><span class="info-label">Location: </span><span class="info-value">Germany</span></div>
+                <div class="info-item"><span class="info-label">Timezone: </span><span class="info-value">CET (UTC+1)</span></div>
+                <div class="info-item"><span class="info-label">School: </span><span class="info-value">Adolf Reichwein Gymnasium Heusenstamm</span></div>
               </div>
             </div>
             <div class="right-column">
