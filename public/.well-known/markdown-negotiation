@@ -1,0 +1,12 @@
+{
+  "markdown_versions": {
+    "/": {
+      "type": "text/markdown",
+      "url": "/index.md"
+    },
+    "/portfolio": {
+      "type": "text/markdown",
+      "url": "/portfolio.md"
+    }
+  }
+}
