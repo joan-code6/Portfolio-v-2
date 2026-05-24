@@ -1,0 +1,14 @@
+name = "joancode-proxy"
+main = "src/index.js"
+compatibility_date = "2026-05-24"
+
+[placement]
+mode = "smart"
+
+[[routes]]
+pattern = "joancode.dev/*"
+zone_id = "624a2aa1fe099b82259ecfd0a1ef44de"
+
+[[routes]]
+pattern = "www.joancode.dev/*"
+zone_id = "624a2aa1fe099b82259ecfd0a1ef44de"
