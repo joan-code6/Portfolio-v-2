@@ -14,7 +14,7 @@ const pages = {
         <div class="portfolio-card">
           <div class="card-content">
             <div class="left-column">
-              <p class="home-summary" style="display:none">German student developer building open source AI tools, CLI apps, audio ML models, and Minecraft mods.</p>
+              <p class="home-summary">Joan Code aka Bennet Joan Wegener — full stack web developer and open source builder. I code in Python, React, Flutter, Dart, Java, and HTML/CSS.</p>
               <div class="profile-pic">
                 <img src="https://avatars.githubusercontent.com/u/172996447" alt="Bennet Joan Wegener profile" class="profile-img" />
               </div>
