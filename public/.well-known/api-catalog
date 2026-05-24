@@ -1,0 +1,51 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "joan-code6 API Catalog",
+  "description": "Open source APIs and tools by Bennet Joan Wegener",
+  "url": "https://joancode.dev/",
+  "itemListElement": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Zen AI",
+      "description": "Personal AI assistant with intelligent memory, cross-device sync, and deep integrations.",
+      "url": "https://github.com/joan-code6/zen_ai",
+      "applicationCategory": "AI"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "qssh",
+      "description": "Quick SSH session manager to save VM credentials and connect with a single command.",
+      "url": "https://github.com/joan-code6/qssh",
+      "applicationCategory": "CLI"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Voice-Guard",
+      "description": "Machine learning model to detect racial slurs directly from audio.",
+      "url": "https://github.com/joan-code6/Voice-Guard",
+      "applicationCategory": "ML"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Lanis API",
+      "description": "Python API to access the Schulportal Hessen (LANIS) programmatically.",
+      "url": "https://github.com/joan-code6/lanis_api",
+      "applicationCategory": "API"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Modset Policy Enforcement (MPE)",
+      "description": "Fabric mod that enforces banned mods and protects Minecraft servers from cheaters.",
+      "url": "https://github.com/joan-code6/Modset-Policy-Enforcement",
+      "applicationCategory": "Minecraft Mod"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Clean Svelte Text Editor",
+      "description": "A clean, distraction-free Svelte text editor focused on a minimal writing UI.",
+      "url": "https://github.com/joan-code6/clean-svelte-based-text-editor",
+      "applicationCategory": "UI"
+    }
+  ]
+}
