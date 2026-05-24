@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Bennet Joan Wegener — Developer Portfolio",
+  "description": "Personal portfolio and project showcase of Bennet Joan Wegener (joan-code). A German student developer building open source projects in AI, CLI tools, audio ML, Minecraft modding, and web development.",
+  "url": "https://joancode.dev/",
+  "author": {
+    "@type": "Person",
+    "name": "Bennet Joan Wegener",
+    "alternateName": "joan-code",
+    "url": "https://github.com/joan-code6"
+  },
+  "keywords": ["developer", "portfolio", "python", "react", "flutter", "AI", "open source", "Germany"]
+}
