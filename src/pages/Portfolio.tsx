@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import './Portfolio.css';
@@ -58,6 +59,15 @@ const Portfolio = () => {
   const navigate = useNavigate();
 
   return (
+    <>
+      <Helmet>
+        <title>Portfolio | Bennet Joan Wegener</title>
+        <meta name="description" content="Explore Bennet Joan Wegener's projects: Zen AI (personal AI assistant), Voice-Guard (audio ML), qssh (SSH manager), MPE (Minecraft Fabric mod), Lanis API, and a Svelte text editor." />
+        <meta property="og:title" content="Portfolio | Bennet Joan Wegener" />
+        <meta property="og:description" content="Explore Bennet Joan Wegener's projects — AI, CLI, ML, Minecraft mods, and more." />
+        <meta name="twitter:title" content="Portfolio | Bennet Joan Wegener" />
+        <meta name="twitter:description" content="Explore Bennet Joan Wegener's projects — AI, CLI, ML, Minecraft mods, and more." />
+      </Helmet>
     <div className="portfolio-container">
       {/* Animated background */}
       <div className="portfolio-bg">
@@ -244,6 +254,7 @@ const Portfolio = () => {
         />
       ))}
     </div>
+    </>
   );
 };
 

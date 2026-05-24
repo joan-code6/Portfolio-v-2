@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
@@ -9,6 +10,15 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
+    <>
+      <Helmet>
+        <title>Bennet Joan Wegener | Developer &amp; Portfolio</title>
+        <meta name="description" content="Bennet Joan Wegener (joan-code) — German student developer building Zen AI, qssh, Voice-Guard, and more. Explore my open source portfolio." />
+        <meta property="og:title" content="Bennet Joan Wegener | Developer &amp; Portfolio" />
+        <meta property="og:description" content="Student developer from Germany building open source AI tools, CLI apps, audio ML models, Minecraft mods, and more." />
+        <meta name="twitter:title" content="Bennet Joan Wegener | Developer &amp; Portfolio" />
+        <meta name="twitter:description" content="Student developer from Germany building open source AI tools, CLI apps, audio ML models, Minecraft mods, and more." />
+      </Helmet>
     <div className="home-container">
       {/* Animated background */}
       <div className="bg-canvas">
@@ -190,6 +200,7 @@ const Home = () => {
         {'{}'}
       </motion.div>
     </div>
+    </>
   );
 };
 
