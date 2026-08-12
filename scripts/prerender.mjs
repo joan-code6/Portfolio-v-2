@@ -40,8 +40,8 @@ const pages = {
                 </div>
               </div>
               <nav class="home-actions" aria-label="Explore">
-                <a class="portfolio-btn" href="/portfolio">View projects →</a>
-                <a class="portfolio-btn media-btn" href="/media">Press & recognition →</a>
+                <a class="portfolio-btn" href="/portfolio">View Portfolio →</a>
+                <a class="press-link" href="/media">Press & recognition →</a>
               </nav>
               <div class="social-links">
                 <a href="https://github.com/joan-code6" class="social-button">GitHub</a>
@@ -57,69 +57,87 @@ const pages = {
     description:
       'Selected projects by Bennet Joan Wegener: LANIS for Schulportal Hessen, award-winning Zen AI, OC Forms, Broccoli, smart garden irrigation, and qssh.',
     canonical: 'https://joancode.dev/portfolio',
-    content: `      <main class="portfolio-container">
-        <header class="portfolio-header">
-          <nav class="page-nav"><a href="/">← Home</a><a href="/media">Press & recognition →</a></nav>
-          <p class="page-eyebrow">Selected work · 2025–2026</p>
-          <h1 class="portfolio-title">Projects I’ve built</h1>
-          <p class="portfolio-subtitle">Selected for depth, usefulness, and real-world use—not just recency.</p>
+    content: `      <main class="content-page"><div class="content-shell">
+        <header class="content-header">
+          <nav class="content-nav"><a class="content-nav-button" href="/">← Back to Home</a><a class="content-nav-button content-nav-secondary" href="/media">Press →</a></nav>
+          <p class="content-kicker"><span>joan-code</span> / projects</p>
+          <h1 class="content-title">My Portfolio</h1>
+          <p class="content-intro">Projects selected for depth, usefulness, and real-world use—not just recency.</p>
         </header>
-        <section class="projects-grid" aria-label="Featured projects">
-          <article class="project-card"><div class="project-content">
-            <p class="project-kicker">Full-stack platform · Active</p><h2 class="project-title">LANIS for Schulportal Hessen</h2>
+        <section class="projects-grid" aria-label="Selected projects">
+          <article class="project-card">
+            <div class="project-card-head"><span class="project-category">Full-stack platform</span><span class="project-status">Active · 2025–now</span></div>
+            <h2 class="project-title">LANIS for Schulportal Hessen</h2>
             <p class="project-description">An unofficial, faster way to use Schulportal Hessen. I build and maintain the Python client, cached REST API, and responsive PWA for messages, courses, homework, files, calendars, substitution plans, and timetables.</p>
-            <div class="project-links"><a href="https://lanis.arg-server.de">Live app</a><a href="https://lanis-backend.joancode.dev/documentation">API docs</a><a href="https://github.com/joan-code6/lanis_api">API code</a><a href="https://github.com/joan-code6/lanis_ui">UI code</a></div>
-          </div></article>
-          <article class="project-card"><div class="project-content">
-            <p class="project-kicker">Award-winning research project</p><h2 class="project-title">Zen AI</h2>
-            <p class="project-description">A cross-platform personal AI assistant whose trigger-word memory retrieves only relevant notes. Zen AI won first place regionally, second place in Mathematics/Computer Science, and the University of Kassel Informatics special prize at Jugend forscht junior Hessen 2026.</p>
-            <div class="project-links"><a href="https://zen.arg-server.de">Live web app</a><a href="https://joancode.dev/zen_ai/">Project & benchmark</a><a href="https://github.com/joan-code6/zen_ai_public">Public code</a></div>
-          </div></article>
-          <article class="project-card"><div class="project-content">
-            <p class="project-kicker">Production workflow · Active</p><h2 class="project-title">OC Forms</h2>
-            <p class="project-description">The application and review system for OutCraft Minecraft events, with Discord OAuth, autosave, moderator scoring, conflict resolution, audit logs, roles, analytics, and whitelist export. Built for a community of 11,000 members, OC Forms has handled more than 2,500 individual applications.</p>
-            <div class="project-links"><a href="https://apply.outcraft.net">Live site</a><a href="https://github.com/joan-code6/oc-forms">Source code</a></div>
-          </div></article>
-          <article class="project-card"><div class="project-content">
-            <p class="project-kicker">Team hackathon build · Berlin 2026</p><h2 class="project-title">Broccoli</h2>
-            <p class="project-description">A competitive multiplayer virtual-pet game built with my team at Hack Club’s Horizons Europa hackathon. NFC chips feed and care for two on-screen broccoli pets through a Pico reader, Flask backend, React display, and Flutter app.</p>
-            <div class="project-links"><a href="https://user-cdn.hackclub-assets.com/019f9dc0-2213-7ab4-9a04-f0c7d4e0ba9f/broccoli.mp4">Watch demo</a><a href="https://github.com/joan-code6/broccoli">Source code</a></div>
-          </div></article>
-          <article class="project-card"><div class="project-content">
-            <p class="project-kicker">Hardware + software · Running at home</p><h2 class="project-title">Smart Garden Irrigation</h2>
+            <p class="project-note">The public API and visual interface are both running live.</p>
+            <div class="project-card-footer"><div class="project-links"><a class="project-link" href="https://lanis.arg-server.de">Open app</a><a class="project-link" href="https://lanis-backend.joancode.dev/documentation">API docs</a><a class="project-link" href="https://github.com/joan-code6/lanis_api">API code</a><a class="project-link" href="https://github.com/joan-code6/lanis_ui">UI code</a></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-card-head"><span class="project-category">Award-winning research project</span><span class="project-status">Completed · 2025–2026</span></div>
+            <h2 class="project-title">Zen AI</h2>
+            <p class="project-description">A cross-platform personal AI assistant whose trigger-word memory retrieves only relevant notes instead of flooding the model with every saved detail.</p>
+            <p class="project-note">1st place regionally, then 2nd place in Mathematics/Computer Science and the University of Kassel Informatics special prize at Jugend forscht junior Hessen 2026.</p>
+            <div class="project-card-footer"><div class="project-links"><a class="project-link" href="https://zen.arg-server.de">Live web app</a><a class="project-link" href="https://joancode.dev/zen_ai/">Project site</a><a class="project-link" href="https://github.com/joan-code6/zen_ai_public">Public code</a></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-card-head"><span class="project-category">Production workflow</span><span class="project-status">Active · 2026</span></div>
+            <h2 class="project-title">OC Forms</h2>
+            <p class="project-description">The application and review system for OutCraft Minecraft events, with Discord OAuth, moderation, audit logs, roles, analytics, and whitelist export.</p>
+            <p class="project-note">Built for a community of 11,000 members, OC Forms has handled more than 2,500 individual applications.</p>
+            <div class="project-card-footer"><div class="project-links"><a class="project-link" href="https://apply.outcraft.net">Live site</a><a class="project-link" href="https://github.com/joan-code6/oc-forms">Source code</a></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-card-head"><span class="project-category">Team hackathon build</span><span class="project-status">Horizons Europa · Berlin 2026</span></div>
+            <h2 class="project-title">Broccoli</h2>
+            <p class="project-description">A competitive multiplayer virtual-pet game built with my team at Hack Club’s Horizons Europa hackathon. Physical NFC chips feed and care for two on-screen broccoli pets.</p>
+            <p class="project-note">The prototype connects a Pico NFC reader to a Flask game loop, React display, and Flutter companion app.</p>
+            <div class="project-card-footer"><div class="project-links"><a class="project-link" href="https://user-cdn.hackclub-assets.com/019f9dc0-2213-7ab4-9a04-f0c7d4e0ba9f/broccoli.mp4">Watch demo</a><a class="project-link" href="https://github.com/joan-code6/broccoli">Source code</a></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-card-head"><span class="project-category">Hardware + software</span><span class="project-status">Running at home · 2026</span></div>
+            <h2 class="project-title">Smart Garden Irrigation</h2>
             <p class="project-description">A real five-zone garden watering system using an ESP32-C3, Raspberry Pi, MQTT, FastAPI, weather-aware schedules, history, Discord commands, and Google Home.</p>
-            <div class="project-links"><a href="https://garten-bewaesserung.joancode.dev">Live dashboard</a><a href="https://github.com/joan-code6/garten-bewaesserung">Source code</a></div>
-          </div></article>
+            <div class="project-card-footer"><div class="project-links"><a class="project-link" href="https://garten-bewaesserung.joancode.dev">Live dashboard</a><a class="project-link" href="https://github.com/joan-code6/garten-bewaesserung">Source code</a></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-card-head"><span class="project-category">Everyday utility</span><span class="project-status">Stable</span></div>
+            <h2 class="project-title">qssh</h2>
+            <p class="project-description">A small Python CLI I still rely on: save an SSH session once, then connect by name with a single command. It supports password and key-based authentication and is published on PyPI.</p>
+            <div class="project-card-footer"><div class="project-links"><a class="project-link" href="https://pypi.org/project/qssh/">Install from PyPI</a><a class="project-link" href="https://github.com/joan-code6/qssh">Source code</a></div></div>
+          </article>
         </section>
-        <section class="utility-project"><div class="utility-copy">
-          <p class="project-kicker">Everyday utility · stable</p><h2>qssh</h2>
-          <p>A Python CLI I still rely on: save an SSH session once, then connect by name with one command. It supports password and key-based authentication.</p>
-          <div class="project-links"><a href="https://pypi.org/project/qssh/">Install from PyPI</a><a href="https://github.com/joan-code6/qssh">Source code</a></div>
-        </div></section>
-      </main>`,
+        <a class="github-strip" href="https://github.com/joan-code6"><span><strong>More projects</strong><small>Experiments, tools, and contributions live on GitHub.</small></span><span class="github-strip-action">Visit GitHub</span></a>
+      </div></main>`,
   },
   '/media': {
     title: 'Press & Recognition | Bennet Joan Wegener',
     description:
       'Press coverage and official records about Bennet Joan Wegener, Zen AI, Bloom Assist, and his Jugend forscht awards in 2025 and 2026.',
     canonical: 'https://joancode.dev/media',
-    content: `      <main class="media-container">
-        <header class="media-header">
-          <nav class="page-nav"><a href="/">← Home</a><a href="/portfolio">Projects →</a></nav>
-          <p class="media-eyebrow">Press archive · 2025–2026</p>
-          <h1>Press & recognition</h1>
-          <p class="media-intro">Independent reporting, school coverage, and official competition records about my Jugend forscht projects and awards.</p>
+    content: `      <main class="content-page"><div class="content-shell">
+        <header class="content-header media-header">
+          <nav class="content-nav"><a class="content-nav-button" href="/">← Back to Home</a><a class="content-nav-button content-nav-secondary" href="/portfolio">Projects →</a></nav>
+          <p class="content-kicker"><span>joan-code</span> / press</p>
+          <h1 class="content-title">Press &amp; recognition</h1>
+          <p class="content-intro">Independent reporting, school coverage, and official competition records about my Jugend forscht projects and awards.</p>
+          <div class="recognition-lines"><p><span class="recognition-year">2026</span><strong>Zen AI</strong><span class="recognition-detail">Regional winner · 2nd place Hessen · Informatics special prize</span></p><p><span class="recognition-year">2025</span><strong>Bloom Assist</strong><span class="recognition-detail">3rd place Hessen · two special prizes</span></p></div>
         </header>
-        <section class="coverage-list" aria-label="Press articles and official records">
-          <article class="coverage-item"><div class="coverage-copy"><p>Frankfurter Rundschau · 13 February 2026</p><h2>Junge Forschende in Rhein-Main: Schlauer, als Trump erlaubt</h2><p>The FR reports from Jugend forscht at the Senckenberg Museum, photographs Bennet presenting Zen AI, and explains its selective memory.</p><a href="https://www.fr.de/frankfurt/junge-forschende-in-rhein-main-schlauer-als-trump-erlaubt-94169199.html">Read article</a></div></article>
-          <article class="coverage-item"><div class="coverage-copy"><p>Adolf-Reichwein-Gymnasium · 23 February 2026</p><h2>Rekordteilnahme bei Jugend forscht</h2><p>The school describes Zen AI and Bennet’s regional first-place finish in Mathematics/Computer Science.</p><a href="https://arg-heusenstamm.de/news/entry/107-rekordteilnahme-bei-jugend-forscht/">Read article</a></div></article>
-          <article class="coverage-item"><div class="coverage-copy"><p>University of Kassel · March 2026</p><h2>Jugend forscht junior Hessen 2026 — Zen AI</h2><p>The official state program lists Bennet Joan Wegener and publishes the Zen AI project abstract.</p><a href="https://www.uni-kassel.de/uni/files/Aktuelles/Jugend_forscht_junior/2026/Broschuere_jugend-forscht_2026-1.pdf#page=41">Open program</a></div></article>
-          <article class="coverage-item"><div class="coverage-copy"><p>Kreis Offenbach · April 2026</p><h2>Schule – In & Out, issue 24</h2><p>The regional magazine records Zen AI’s second place at the Hessian final and the Informatics special prize.</p><a href="https://www.kreis-offenbach.de/PDF/Schule_In_Out_Ausgabe_24_April_2026_nicht_barrierefrei.PDF?Ext=PDF&amp;ObjID=2491&amp;ObjLa=1&amp;ObjSvrID=4013&amp;WTR=1">Open issue</a></div></article>
-          <article class="coverage-item"><div class="coverage-copy"><p>Adolf-Reichwein-Gymnasium · 2 April 2025</p><h2>Landesentscheid bei Jugend forscht</h2><p>The school reports third place in Mathematics/Computer Science for Bloom Assist and two additional special prizes.</p><a href="https://arg-heusenstamm.de/news/entry/79-landesentscheid-bei-jugend-forscht/">Read article</a></div></article>
-          <article class="coverage-item"><div class="coverage-copy"><p>Adolf-Reichwein-Gymnasium · 9 March 2025</p><h2>Erfolgreich bei „jugend forscht“</h2><p>The regional report introduces Bloom Assist and its award as the best interdisciplinary project.</p><a href="https://arg-heusenstamm.de/news/entry/78-erfolgreich-bei-jugend-forscht/">Read article</a></div></article>
-          <article class="coverage-item"><div class="coverage-copy"><p>Kreis Offenbach · April 2025</p><h2>Schule – In & Out, issue 20</h2><p>Kreis Offenbach identifies Bennet Wegener and Lev Popov as the developers of Bloom Assist.</p><a href="https://www.kreis-offenbach.de/loadDocument.phtml?Ext=PDF&amp;FID=4013.879.1#page=15">Open issue</a></div></article>
+        <a class="media-featured" href="https://www.fr.de/frankfurt/junge-forschende-in-rhein-main-schlauer-als-trump-erlaubt-94169199.html">
+          <div class="media-featured-heading"><span class="media-featured-label">Featured coverage</span><p class="media-meta"><span>Frankfurter Rundschau</span><time>13 February 2026</time></p><h2>Junge Forschende in Rhein-Main: Schlauer, als Trump erlaubt</h2></div>
+          <div class="media-featured-copy"><p>The FR reports from Jugend forscht at the Senckenberg Museum, photographs Bennet presenting Zen AI, and explains its selective memory.</p><span>Read original article</span></div>
+        </a>
+        <section class="media-archive" aria-label="Press articles and official records">
+          <div class="media-section-heading"><div><p class="media-section-label">Source archive</p><h2>Articles &amp; official records</h2></div><p>Original publisher links</p></div>
+          <div class="media-grid">
+            <a class="media-card" href="https://www.kreis-offenbach.de/PDF/Schule_In_Out_Ausgabe_24_April_2026_nicht_barrierefrei.PDF?Ext=PDF&amp;ObjID=2491&amp;ObjLa=1&amp;ObjSvrID=4013&amp;WTR=1"><p class="media-meta"><span>Kreis Offenbach</span><time>April 2026</time></p><h3>Schule – In &amp; Out, issue 24</h3><p class="media-card-summary">The regional magazine records Zen AI’s second place at the Hessian final and the Informatics special prize.</p><div class="media-card-footer"><span>Regional school magazine</span><strong>Open document</strong></div></a>
+            <a class="media-card" href="https://www.uni-kassel.de/uni/files/Aktuelles/Jugend_forscht_junior/2026/Broschuere_jugend-forscht_2026-1.pdf#page=41"><p class="media-meta"><span>University of Kassel</span><time>March 2026</time></p><h3>Jugend forscht junior Hessen 2026 — Zen AI</h3><p class="media-card-summary">The official state program lists Bennet Joan Wegener and publishes the Zen AI project abstract.</p><div class="media-card-footer"><span>Official competition program</span><strong>Open document</strong></div></a>
+            <a class="media-card" href="https://arg-heusenstamm.de/news/entry/107-rekordteilnahme-bei-jugend-forscht/"><p class="media-meta"><span>Adolf-Reichwein-Gymnasium</span><time>23 February 2026</time></p><h3>Rekordteilnahme bei Jugend forscht</h3><p class="media-card-summary">The school describes Zen AI and Bennet’s regional first-place finish in Mathematics/Computer Science.</p><div class="media-card-footer"><span>School news</span><strong>Read article</strong></div></a>
+            <a class="media-card" href="https://arg-heusenstamm.de/news/entry/79-landesentscheid-bei-jugend-forscht/"><p class="media-meta"><span>Adolf-Reichwein-Gymnasium</span><time>2 April 2025</time></p><h3>Landesentscheid bei Jugend forscht</h3><p class="media-card-summary">The school reports third place in Mathematics/Computer Science for Bloom Assist and two additional special prizes.</p><div class="media-card-footer"><span>School news</span><strong>Read article</strong></div></a>
+            <a class="media-card" href="https://www.kreis-offenbach.de/loadDocument.phtml?Ext=PDF&amp;FID=4013.879.1#page=15"><p class="media-meta"><span>Kreis Offenbach</span><time>April 2025</time></p><h3>Schule – In &amp; Out, issue 20</h3><p class="media-card-summary">Kreis Offenbach identifies Bennet Wegener and Lev Popov as the developers of Bloom Assist.</p><div class="media-card-footer"><span>Regional school magazine</span><strong>Open document</strong></div></a>
+            <a class="media-card" href="https://arg-heusenstamm.de/news/entry/78-erfolgreich-bei-jugend-forscht/"><p class="media-meta"><span>Adolf-Reichwein-Gymnasium</span><time>9 March 2025</time></p><h3>Erfolgreich bei „jugend forscht“</h3><p class="media-card-summary">The regional report introduces Bloom Assist and its award as the best interdisciplinary project.</p><div class="media-card-footer"><span>School news</span><strong>Read article</strong></div></a>
+          </div>
         </section>
-      </main>`,
+      </div></main>`,
   },
 };
 

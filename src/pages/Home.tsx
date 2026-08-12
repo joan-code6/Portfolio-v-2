@@ -171,13 +171,13 @@ const Home = () => {
                 whileHover={{ scale: 1.02, borderColor: 'rgba(255, 255, 255, 0.4)' }}
                 whileTap={{ scale: 0.98 }}
               >
-                View projects →
+                View Portfolio →
               </motion.button>
               <motion.button
-                className="portfolio-btn media-btn"
+                className="press-link"
                 onClick={() => navigate('/media')}
-                whileHover={{ scale: 1.02, borderColor: 'rgba(167, 139, 250, 0.65)' }}
-                whileTap={{ scale: 0.98 }}
+                whileHover={{ x: 2 }}
+                whileTap={{ scale: 0.97 }}
               >
                 Press &amp; recognition →
               </motion.button>

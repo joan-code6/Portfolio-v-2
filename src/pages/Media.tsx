@@ -1,7 +1,8 @@
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
-import { ArrowUpRight, FileText, Newspaper, Trophy } from 'lucide-react';
+import { motion, useReducedMotion } from 'framer-motion';
+import { ArrowUpRight, Newspaper } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import './ContentPage.css';
 import './Media.css';
 
 type MediaItem = {
@@ -133,6 +134,7 @@ const structuredData = {
 
 const Media = () => {
   const navigate = useNavigate();
+  const reduceMotion = useReducedMotion();
 
   return (
     <>
@@ -162,123 +164,117 @@ const Media = () => {
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
-      <main className="media-container">
-        <div className="media-ambient media-ambient-one" aria-hidden="true" />
-        <div className="media-ambient media-ambient-two" aria-hidden="true" />
+      <main className="content-page">
+        <div className="content-page-bg" aria-hidden="true" />
+        <div className="content-shell">
+          <motion.header
+            className="content-header media-header"
+            initial={reduceMotion ? false : { opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.45 }}
+          >
+            <nav className="content-nav" aria-label="Page navigation">
+              <button className="content-nav-button" type="button" onClick={() => navigate('/')}>
+                ← Back to Home
+              </button>
+              <button
+                className="content-nav-button content-nav-secondary"
+                type="button"
+                onClick={() => navigate('/portfolio')}
+              >
+                Projects →
+              </button>
+            </nav>
 
-        <motion.header
-          className="media-header"
-          initial={{ opacity: 0, y: -24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <nav className="page-nav" aria-label="Page navigation">
-            <button className="back-button" onClick={() => navigate('/')}>
-              ← Home
-            </button>
-            <button className="back-button page-nav-secondary" onClick={() => navigate('/portfolio')}>
-              Projects →
-            </button>
-          </nav>
+            <p className="content-kicker"><span>joan-code</span> / press</p>
+            <h1 className="content-title">Press &amp; recognition</h1>
+            <p className="content-intro">
+              Independent reporting, school coverage, and official competition records about my
+              Jugend forscht projects and awards.
+            </p>
 
-          <p className="media-eyebrow">Press archive · 2025–2026</p>
-          <h1>Press &amp; recognition</h1>
-          <p className="media-intro">
-            Independent reporting, school coverage, and official competition records about my
-            Jugend forscht projects and awards.
-          </p>
-
-          <div className="recognition-strip" aria-label="Selected awards">
-            <div>
-              <Trophy size={18} aria-hidden="true" />
-              <span><strong>Zen AI</strong> · Regional winner 2026</span>
+            <div className="recognition-lines" aria-label="Selected awards">
+              <p>
+                <span className="recognition-year">2026</span>
+                <strong>Zen AI</strong>
+                <span className="recognition-detail">Regional winner · 2nd place Hessen · Informatics special prize</span>
+              </p>
+              <p>
+                <span className="recognition-year">2025</span>
+                <strong>Bloom Assist</strong>
+                <span className="recognition-detail">3rd place Hessen · two special prizes</span>
+              </p>
             </div>
-            <div>
-              <Trophy size={18} aria-hidden="true" />
-              <span><strong>Zen AI</strong> · 2nd place Hessen + Informatics special prize</span>
-            </div>
-            <div>
-              <Trophy size={18} aria-hidden="true" />
-              <span><strong>Bloom Assist</strong> · 3rd place Hessen 2025</span>
-            </div>
-          </div>
-        </motion.header>
+          </motion.header>
 
-        <motion.a
-          className="featured-coverage"
-          href={featuredItem.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.08, duration: 0.5 }}
-        >
-          <div className="featured-label">
-            <Newspaper size={17} aria-hidden="true" />
-            Featured newspaper coverage
-          </div>
-          <div className="featured-grid">
-            <div>
-              <p className="coverage-source">{featuredItem.source}</p>
+          <motion.a
+            className="media-featured"
+            href={featuredItem.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={reduceMotion ? false : { opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: reduceMotion ? 0 : 0.06, duration: 0.4 }}
+            whileHover={reduceMotion ? undefined : { y: -3 }}
+          >
+            <div className="media-featured-heading">
+              <span className="media-featured-label">
+                <Newspaper size={15} aria-hidden="true" /> Featured coverage
+              </span>
+              <p className="media-meta">
+                <span>{featuredItem.source}</span>
+                <time dateTime={featuredItem.machineDate}>{featuredItem.date}</time>
+              </p>
               <h2>{featuredItem.title}</h2>
             </div>
-            <div className="featured-summary">
+            <div className="media-featured-copy">
               <p>{featuredItem.summary}</p>
-              <span className="read-source">
-                Read the original article <ArrowUpRight size={17} aria-hidden="true" />
-              </span>
+              <span>Read original article <ArrowUpRight size={16} aria-hidden="true" /></span>
             </div>
-          </div>
-          <time dateTime={featuredItem.machineDate}>{featuredItem.date}</time>
-        </motion.a>
+          </motion.a>
 
-        <section className="coverage-archive" aria-labelledby="archive-title">
-          <div className="archive-heading">
-            <div>
-              <p className="media-eyebrow">Source archive</p>
-              <h2 id="archive-title">Articles &amp; official records</h2>
+          <section className="media-archive" aria-labelledby="archive-title">
+            <div className="media-section-heading">
+              <div>
+                <p className="media-section-label">Source archive</p>
+                <h2 id="archive-title">Articles &amp; official records</h2>
+              </div>
+              <p>Original publisher links</p>
             </div>
-            <p>Links open the original publisher or document.</p>
-          </div>
 
-          <div className="coverage-list">
-            {archiveItems.map((item, index) => {
-              const Icon = item.format === 'pdf' ? FileText : Newspaper;
-              return (
+            <div className="media-grid">
+              {archiveItems.map((item, index) => (
                 <motion.a
                   key={item.url}
-                  className="coverage-item"
+                  className="media-card"
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={reduceMotion ? false : { opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.14 + index * 0.055, duration: 0.4 }}
+                  transition={{ delay: reduceMotion ? 0 : 0.1 + index * 0.04, duration: 0.35 }}
+                  whileHover={reduceMotion ? undefined : { y: -3 }}
                 >
-                  <div className="coverage-icon" aria-hidden="true">
-                    <Icon size={20} />
+                  <p className="media-meta">
+                    <span>{item.source}</span>
+                    <time dateTime={item.machineDate}>{item.date}</time>
+                  </p>
+                  <h3>{item.title}</h3>
+                  <p className="media-card-summary">{item.summary}</p>
+                  <div className="media-card-footer">
+                    <span>{item.sourceKind}</span>
+                    <strong>{item.format === 'pdf' ? 'Open document' : 'Read article'} <ArrowUpRight size={15} aria-hidden="true" /></strong>
                   </div>
-                  <div className="coverage-copy">
-                    <div className="coverage-meta">
-                      <span>{item.source}</span>
-                      <span aria-hidden="true">·</span>
-                      <time dateTime={item.machineDate}>{item.date}</time>
-                    </div>
-                    <h3>{item.title}</h3>
-                    <p>{item.summary}</p>
-                    <span className="coverage-kind">{item.sourceKind}</span>
-                  </div>
-                  <ArrowUpRight className="coverage-arrow" size={20} aria-hidden="true" />
                 </motion.a>
-              );
-            })}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
 
-        <footer className="media-footer">
-          <p>Know of another article that belongs here?</p>
-          <a href="mailto:bennet-wegener@web.de">Send me the link →</a>
-        </footer>
+          <footer className="media-footer">
+            <span>Know of another article that belongs here?</span>
+            <a href="mailto:bennet-wegener@web.de">Send me the link →</a>
+          </footer>
+        </div>
       </main>
     </>
   );
