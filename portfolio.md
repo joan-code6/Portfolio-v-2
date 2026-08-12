@@ -1,33 +1,41 @@
-# My Portfolio — Bennet Joan Wegener
+# Selected projects — Bennet Joan Wegener
 
-Explore my latest projects and open source work.
+These projects are selected for their depth, usefulness, and real-world use.
 
-## Projects
+## LANIS for Schulportal Hessen
 
-### Zen AI
-Personal AI assistant with intelligent memory, cross-device sync, and deep integrations.  
-[GitHub](https://github.com/joan-code6/zen_ai) | Tags: `Python`, `Flutter`, `Firebase`, `AI`
+An unofficial, faster way to use Schulportal Hessen. I build and maintain the Python client, cached REST API, and responsive PWA for messages, courses, homework, files, calendars, substitution plans, and timetables.
 
-### Voice-Guard (WIP)
-Machine learning model in development to detect racial slurs directly from audio.  
-[GitHub](https://github.com/joan-code6/Voice-Guard) | Tags: `ML`, `Audio`, `Security`
+[Live app](https://lanis.arg-server.de) · [API documentation](https://lanis-backend.joancode.dev/documentation) · [API source](https://github.com/joan-code6/lanis_api) · [UI source](https://github.com/joan-code6/lanis_ui)
 
-### qssh
-Quick SSH session manager to save VM credentials and connect with a single command.  
-[GitHub](https://github.com/joan-code6/qssh) | Tags: `Python`, `CLI`
+## Zen AI
 
-### Text Editor
-A clean, distraction-free Svelte text editor focused on a minimal writing UI.  
-[GitHub](https://github.com/joan-code6/clean-svelte-based-text-editor) | Tags: `Svelte`, `UI`, `Writing`
+A cross-platform personal AI assistant whose trigger-word memory retrieves only relevant notes instead of sending every saved detail to the model. Zen AI won first place regionally, then second place in Mathematics/Computer Science and the University of Kassel Informatics special prize at Jugend forscht junior Hessen 2026.
 
-### Modset Policy Enforcement (MPE)
-Fabric mod that enforces banned mods and protects Minecraft servers from cheaters.  
-[GitHub](https://github.com/joan-code6/Modset-Policy-Enforcement) | Tags: `Java`, `Minecraft`, `Fabric`
+[Live web app](https://zen.arg-server.de) · [Project and benchmark](https://joancode.dev/zen_ai/) · [Public source](https://github.com/joan-code6/zen_ai_public)
 
-### Lanis API
-Python API to access the Schulportal Hessen (LANIS) programmatically.  
-[GitHub](https://github.com/joan-code6/lanis_api) | Tags: `Python`, `API`
+## OC Forms
 
----
+The production application and review system for OutCraft Minecraft events. Built for a community of 11,000 members, OC Forms has handled more than 2,500 individual applications. It combines Discord OAuth, autosave, moderator scoring, conflict resolution, role management, audit logs, analytics, and whitelist export on an Appwrite backend with 23 server functions.
 
-More projects on [GitHub](https://github.com/joan-code6)
+[Live site](https://apply.outcraft.net) · [Source](https://github.com/joan-code6/oc-forms)
+
+## Broccoli
+
+A competitive multiplayer virtual-pet game built with my team at Hack Club's Horizons Europa hackathon in Berlin in 2026. Physical NFC chips feed and care for two on-screen broccoli pets through a Pico reader, Flask backend, React display, and Flutter companion app.
+
+[Demo video](https://user-cdn.hackclub-assets.com/019f9dc0-2213-7ab4-9a04-f0c7d4e0ba9f/broccoli.mp4) · [Source](https://github.com/joan-code6/broccoli)
+
+## Smart Garden Irrigation
+
+A real five-zone garden watering system. An ESP32-C3 controls the valves through a Raspberry Pi and MQTT; a FastAPI dashboard handles weather-aware schedules, manual control, and history, with Discord and Google Home integrations.
+
+[Live dashboard](https://garten-bewaesserung.joancode.dev) · [Source](https://github.com/joan-code6/garten-bewaesserung)
+
+## qssh
+
+A small Python CLI I still rely on: save an SSH session once, then connect by name with one command. It supports password and key-based authentication and is published on PyPI.
+
+[PyPI](https://pypi.org/project/qssh/) · [Source](https://github.com/joan-code6/qssh)
+
+More experiments and tools are available on [GitHub](https://github.com/joan-code6). See also [press and recognition](/media).

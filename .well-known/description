@@ -1,14 +1,26 @@
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
+  "@type": "ProfilePage",
   "name": "Bennet Joan Wegener — Developer Portfolio",
-  "description": "Personal portfolio and project showcase of Bennet Joan Wegener (joan-code). A German student developer building open source projects in AI, CLI tools, audio ML, Minecraft modding, and web development.",
+  "description": "Portfolio, press archive, and project showcase for Bennet Joan Wegener (joan-code), a German student developer behind LANIS for Schulportal Hessen and the award-winning Zen AI project.",
   "url": "https://joancode.dev/",
-  "author": {
+  "mainEntity": {
     "@type": "Person",
     "name": "Bennet Joan Wegener",
-    "alternateName": "joan-code",
-    "url": "https://github.com/joan-code6"
+    "alternateName": ["Bennet Wegener", "joan-code"],
+    "url": "https://joancode.dev/",
+    "sameAs": ["https://github.com/joan-code6"],
+    "affiliation": {
+      "@type": "EducationalOrganization",
+      "name": "Adolf-Reichwein-Gymnasium Heusenstamm"
+    },
+    "knowsAbout": ["Python", "FastAPI", "React", "TypeScript", "Flutter", "Artificial intelligence", "Web development", "Internet of things"],
+    "award": [
+      "1st place in Mathematics/Computer Science — Jugend forscht junior Rhein-Main West 2026",
+      "2nd place in Mathematics/Computer Science — Jugend forscht junior Hessen 2026",
+      "Informatics special prize from the University of Kassel — Jugend forscht junior Hessen 2026",
+      "3rd place in Mathematics/Computer Science — Jugend forscht junior Hessen 2025"
+    ]
   },
-  "keywords": ["developer", "portfolio", "python", "react", "flutter", "AI", "open source", "Germany"]
+  "relatedLink": ["https://joancode.dev/portfolio", "https://joancode.dev/media"]
 }
