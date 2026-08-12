@@ -23,32 +23,17 @@
 }
 
 .project-card-head {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 14px;
   margin-bottom: 20px;
 }
 
-.project-category,
-.project-status {
+.project-category {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.66rem;
   line-height: 1.45;
-}
-
-.project-category {
   color: #aaa;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-}
-
-.project-status {
-  flex: 0 0 auto;
-  max-width: 46%;
-  color: #808080;
-  text-align: right;
 }
 
 .project-title {
@@ -79,6 +64,13 @@
 .project-card-footer {
   margin-top: auto;
   padding-top: 22px;
+}
+
+.project-timeline {
+  margin: 0 0 14px;
+  color: #737373;
+  font-size: 0.76rem;
+  line-height: 1.5;
 }
 
 .project-tags {

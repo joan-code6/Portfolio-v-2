@@ -151,18 +151,18 @@ const Media = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45 }}
           >
-            <nav className="content-nav" aria-label="Page navigation">
-              <button className="content-back-link" type="button" onClick={() => navigate('/')}>
-                ← Home
-              </button>
-            </nav>
-
-            <p className="content-kicker"><span>joan-code</span> / press</p>
             <h1 className="content-title">Press &amp; recognition</h1>
-            <p className="content-intro">
-              Independent reporting, school coverage, and official competition records about my
-              Jugend forscht projects and awards.
-            </p>
+            <div className="content-lead">
+              <p className="content-intro">
+                Independent reporting, school coverage, and official competition records about my
+                Jugend forscht projects and awards.
+              </p>
+              <nav className="content-nav" aria-label="Page navigation">
+                <button className="content-back-link" type="button" onClick={() => navigate('/')}>
+                  ← Home
+                </button>
+              </nav>
+            </div>
 
             <div className="recognition-lines" aria-label="Selected awards">
               <p>

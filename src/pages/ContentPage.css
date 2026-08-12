@@ -53,7 +53,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 36px;
+  flex: 0 0 auto;
+  margin: 0 0 5px;
 }
 
 .content-back-link {
@@ -75,18 +76,6 @@
   color: #b5b5b5;
 }
 
-.content-kicker {
-  margin: 0 0 12px;
-  color: #888;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.76rem;
-  letter-spacing: 0.06em;
-}
-
-.content-kicker span {
-  color: #aaa;
-}
-
 .content-title {
   margin: 0 0 12px;
   color: #fff;
@@ -104,6 +93,13 @@
   line-height: 1.65;
 }
 
+.content-lead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 28px;
+}
+
 .content-page a:focus-visible,
 .content-page button:focus-visible {
   outline: 2px solid #a78bfa;
@@ -119,16 +115,22 @@
     margin-bottom: 32px;
   }
 
-  .content-nav {
-    margin-bottom: 30px;
-  }
-
   .content-title {
     font-size: 2.5rem;
   }
 
   .content-intro {
     font-size: 1rem;
+  }
+
+  .content-lead {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .content-nav {
+    margin: 0;
   }
 }
 

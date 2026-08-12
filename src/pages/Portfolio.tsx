@@ -14,7 +14,7 @@ type ProjectLink = {
 type Project = {
   title: string;
   category: string;
-  status: string;
+  timeline: string;
   description: string;
   note?: string;
   tags: string[];
@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     title: 'LANIS for Schulportal Hessen',
     category: 'Full-stack platform',
-    status: 'Active · 2025–now',
+    timeline: 'Building and maintaining it since 2025',
     description:
       'An unofficial, faster way to use Schulportal Hessen. I build and maintain the Python client, cached REST API, and responsive PWA for messages, courses, homework, files, calendars, substitution plans, and timetables.',
     note: 'The public API and visual interface are both running live.',
@@ -40,7 +40,7 @@ const projects: Project[] = [
   {
     title: 'Zen AI',
     category: 'Award-winning research project',
-    status: 'Completed · 2025–2026',
+    timeline: 'Built from 2025 to 2026',
     description:
       'A cross-platform personal AI assistant whose trigger-word memory retrieves only relevant notes instead of flooding the model with every saved detail. I built the backend, web, desktop, mobile, CLI, email, calendar, MCP, and e-ink integrations.',
     note: '1st place regionally, then 2nd place in Mathematics/Computer Science and the University of Kassel Informatics special prize at Jugend forscht junior Hessen 2026.',
@@ -54,7 +54,7 @@ const projects: Project[] = [
   {
     title: 'OC Forms',
     category: 'Production workflow',
-    status: 'Active · 2026',
+    timeline: 'In production since 2026',
     description:
       'The application and review system for OutCraft Minecraft events. Players apply through Discord OAuth; moderators claim and score applications; admins resolve conflicts, manage roles, inspect audit logs, and export the final whitelist.',
     note: 'Built for a community of 11,000 members, OC Forms has handled more than 2,500 individual applications. It runs on Appwrite with 23 server functions, autosave, invite links, and analytics.',
@@ -67,7 +67,7 @@ const projects: Project[] = [
   {
     title: 'Broccoli',
     category: 'Team hackathon build',
-    status: 'Horizons Europa · Berlin 2026',
+    timeline: 'Built at Horizons Europa in Berlin · 2026',
     description:
       'A competitive multiplayer virtual-pet game built with my team at Hack Club’s Horizons Europa hackathon in Berlin. Physical NFC chips feed and care for two on-screen broccoli pets while the game tracks their growth.',
     note: 'The prototype connects a Pico NFC reader over serial to a Flask game loop, React display, and Flutter companion app.',
@@ -84,7 +84,7 @@ const projects: Project[] = [
   {
     title: 'Smart Garden Irrigation',
     category: 'Hardware + software',
-    status: 'Running at home · 2026',
+    timeline: 'Running at home since 2026',
     description:
       'The system that waters my garden for real: an ESP32-C3 controls five valves through a Raspberry Pi and MQTT, while a FastAPI dashboard handles schedules, history, and manual control.',
     note: 'It checks weather before watering, can skip rain or frost, and also supports Discord commands and Google Home. Public visitors can view the dashboard; physical controls stay protected.',
@@ -97,7 +97,7 @@ const projects: Project[] = [
   {
     title: 'qssh',
     category: 'Everyday utility',
-    status: 'Stable',
+    timeline: 'Stable release',
     description:
       'A small Python CLI I still rely on: save an SSH session once, then connect by name with a single command. It supports password and key-based authentication and is published on PyPI.',
     tags: ['Python', 'CLI', 'PyPI', 'SSH'],
@@ -150,17 +150,17 @@ const Portfolio = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45 }}
           >
-            <nav className="content-nav" aria-label="Page navigation">
-              <button className="content-back-link" type="button" onClick={() => navigate('/')}>
-                ← Home
-              </button>
-            </nav>
-
-            <p className="content-kicker"><span>joan-code</span> / projects</p>
             <h1 className="content-title">My Portfolio</h1>
-            <p className="content-intro">
-              Projects selected for depth, usefulness, and real-world use—not just recency.
-            </p>
+            <div className="content-lead">
+              <p className="content-intro">
+                Projects selected for depth, usefulness, and real-world use—not just recency.
+              </p>
+              <nav className="content-nav" aria-label="Page navigation">
+                <button className="content-back-link" type="button" onClick={() => navigate('/')}>
+                  ← Home
+                </button>
+              </nav>
+            </div>
           </motion.header>
 
           <section className="projects-grid" aria-label="Selected projects">
@@ -175,7 +175,6 @@ const Portfolio = () => {
               >
                 <div className="project-card-head">
                   <span className="project-category">{project.category}</span>
-                  <span className="project-status">{project.status}</span>
                 </div>
 
                 <h2 className="project-title">{project.title}</h2>
@@ -183,6 +182,7 @@ const Portfolio = () => {
                 {project.note && <p className="project-note">{project.note}</p>}
 
                 <div className="project-card-footer">
+                  <p className="project-timeline">{project.timeline}</p>
                   <div className="project-tags" aria-label={`${project.title} technologies`}>
                     {project.tags.map((tag) => (
                       <span key={tag} className="project-tag">{tag}</span>
