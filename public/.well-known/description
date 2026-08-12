@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "ProfilePage",
-  "name": "Bennet Joan Wegener — Developer Portfolio",
+  "name": "Developer portfolio of Bennet Joan Wegener",
   "description": "Portfolio, press archive, and project showcase for Bennet Joan Wegener (joan-code), a German student developer behind LANIS for Schulportal Hessen and the award-winning Zen AI project.",
   "url": "https://joancode.dev/",
   "mainEntity": {
@@ -16,10 +16,10 @@
     },
     "knowsAbout": ["Python", "FastAPI", "React", "TypeScript", "Flutter", "Artificial intelligence", "Web development", "Internet of things"],
     "award": [
-      "1st place in Mathematics/Computer Science — Jugend forscht junior Rhein-Main West 2026",
-      "2nd place in Mathematics/Computer Science — Jugend forscht junior Hessen 2026",
-      "Informatics special prize from the University of Kassel — Jugend forscht junior Hessen 2026",
-      "3rd place in Mathematics/Computer Science — Jugend forscht junior Hessen 2025"
+      "1st place in Mathematics/Computer Science at Jugend forscht junior Rhein-Main West 2026",
+      "2nd place in Mathematics/Computer Science at Jugend forscht junior Hessen 2026",
+      "University of Kassel Informatics special prize at Jugend forscht junior Hessen 2026",
+      "3rd place in Mathematics/Computer Science at Jugend forscht junior Hessen 2025"
     ]
   },
   "relatedLink": ["https://joancode.dev/portfolio", "https://joancode.dev/media"]

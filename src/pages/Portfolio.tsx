@@ -153,7 +153,8 @@ const Portfolio = () => {
             <h1 className="content-title">My Portfolio</h1>
             <div className="content-lead">
               <p className="content-intro">
-                Projects selected for depth, usefulness, and real-world use—not just recency.
+                I selected these projects for their depth, usefulness, and real-world use,
+                regardless of when I built them.
               </p>
               <nav className="content-nav" aria-label="Page navigation">
                 <button className="content-back-link" type="button" onClick={() => navigate('/')}>

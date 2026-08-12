@@ -1,4 +1,4 @@
-# Selected projects — Bennet Joan Wegener
+# Selected projects by Bennet Joan Wegener
 
 These projects are selected for their depth, usefulness, and real-world use.
 

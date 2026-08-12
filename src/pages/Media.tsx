@@ -46,7 +46,7 @@ const mediaItems: MediaItem[] = [
     machineDate: '2026-03-20',
     source: 'University of Kassel',
     sourceKind: 'Official competition program',
-    title: 'Jugend forscht junior Hessen 2026 — Zen AI',
+    title: 'Zen AI in the Jugend forscht junior Hessen 2026 program',
     summary:
       'The official state-competition program lists Bennet Joan Wegener and publishes the Zen AI abstract: a trigger-word note database designed to solve a “needle in a haystack” context problem.',
     url: 'https://www.uni-kassel.de/uni/files/Aktuelles/Jugend_forscht_junior/2026/Broschuere_jugend-forscht_2026-1.pdf#page=41',
@@ -84,7 +84,7 @@ const archiveItems = mediaItems
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Press and recognition — Bennet Joan Wegener',
+  name: 'Press and recognition for Bennet Joan Wegener',
   url: 'https://joancode.dev/media',
   description:
     'Press articles, official records, and civic engagement connected to Bennet Joan Wegener, Zen AI, Bloom Assist, Jugend forscht, and KiJuPa Heusenstamm.',
