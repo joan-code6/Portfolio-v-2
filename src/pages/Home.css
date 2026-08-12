@@ -79,6 +79,14 @@
   letter-spacing: 0.3px;
 }
 
+.profile-summary {
+  max-width: 430px;
+  margin-top: 16px;
+  color: #b4b4bc;
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
 .profile-pic {
   width: 300px;
   height: 300px;
@@ -272,6 +280,23 @@
   .social-links .social-button {
     width: 100%;
   }
+
+  .info-item {
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .info-label {
+    flex: 0 0 auto;
+  }
+
+  .info-value {
+    max-width: 62%;
+    margin-left: auto;
+    overflow-wrap: anywhere;
+    line-height: 1.4;
+    text-align: right;
+  }
 }
 
 .social-link {
@@ -295,7 +320,14 @@
   color: #fff;
 }
 
-/* Portfolio button */
+.home-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: auto;
+}
+
+/* Primary page buttons */
 .portfolio-btn {
   width: 100%;
   padding: 16px;
@@ -307,11 +339,16 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: auto;
 }
 
 .portfolio-btn:hover {
   background: rgba(255, 255, 255, 0.05);
+}
+
+.media-btn {
+  border-color: rgba(167, 139, 250, 0.34);
+  background: rgba(124, 58, 237, 0.08);
+  color: #ddd6fe;
 }
 
 /* Floating code elements */
@@ -363,3 +400,8 @@
   }
 }
 
+@media (max-width: 520px) {
+  .home-actions {
+    grid-template-columns: 1fr;
+  }
+}

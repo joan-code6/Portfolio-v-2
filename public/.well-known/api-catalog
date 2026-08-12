@@ -1,51 +1,56 @@
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "joan-code6 API Catalog",
-  "description": "Open source APIs and tools by Bennet Joan Wegener",
-  "url": "https://joancode.dev/",
+  "name": "Bennet Joan Wegener — selected software projects",
+  "description": "Live software, APIs, hardware systems, and developer tools built by Bennet Joan Wegener.",
+  "url": "https://joancode.dev/portfolio",
   "itemListElement": [
     {
       "@type": "SoftwareApplication",
+      "name": "LANIS for Schulportal Hessen",
+      "description": "Unofficial Python client, cached REST API, and responsive PWA for Schulportal Hessen.",
+      "url": "https://lanis.arg-server.de",
+      "sameAs": ["https://github.com/joan-code6/lanis_api", "https://github.com/joan-code6/lanis_ui"],
+      "applicationCategory": "EducationApplication"
+    },
+    {
+      "@type": "SoftwareApplication",
       "name": "Zen AI",
-      "description": "Personal AI assistant with intelligent memory, cross-device sync, and deep integrations.",
-      "url": "https://github.com/joan-code6/zen_ai",
-      "applicationCategory": "AI"
+      "description": "Award-winning cross-platform personal AI assistant with selective trigger-word memory.",
+      "url": "https://joancode.dev/zen_ai/",
+      "sameAs": ["https://github.com/joan-code6/zen_ai_public"],
+      "applicationCategory": "AIApplication"
+    },
+    {
+      "@type": "WebApplication",
+      "name": "OC Forms",
+      "description": "Application and review workflow for an 11,000-member OutCraft community; it has handled more than 2,500 individual applications and includes Discord OAuth, moderation, audits, and export.",
+      "url": "https://apply.outcraft.net",
+      "sameAs": ["https://github.com/joan-code6/oc-forms"],
+      "applicationCategory": "BusinessApplication"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Broccoli",
+      "description": "Multiplayer NFC virtual-pet game built by a team at Hack Club Horizons Europa in Berlin.",
+      "url": "https://github.com/joan-code6/broccoli",
+      "applicationCategory": "GameApplication"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Smart Garden Irrigation",
+      "description": "Five-zone, weather-aware garden watering system using an ESP32-C3, Raspberry Pi, MQTT, and FastAPI.",
+      "url": "https://garten-bewaesserung.joancode.dev",
+      "sameAs": ["https://github.com/joan-code6/garten-bewaesserung"],
+      "applicationCategory": "HomeApplication"
     },
     {
       "@type": "SoftwareApplication",
       "name": "qssh",
-      "description": "Quick SSH session manager to save VM credentials and connect with a single command.",
-      "url": "https://github.com/joan-code6/qssh",
-      "applicationCategory": "CLI"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "Voice-Guard",
-      "description": "Machine learning model to detect racial slurs directly from audio.",
-      "url": "https://github.com/joan-code6/Voice-Guard",
-      "applicationCategory": "ML"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "Lanis API",
-      "description": "Python API to access the Schulportal Hessen (LANIS) programmatically.",
-      "url": "https://github.com/joan-code6/lanis_api",
-      "applicationCategory": "API"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "Modset Policy Enforcement (MPE)",
-      "description": "Fabric mod that enforces banned mods and protects Minecraft servers from cheaters.",
-      "url": "https://github.com/joan-code6/Modset-Policy-Enforcement",
-      "applicationCategory": "Minecraft Mod"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "Clean Svelte Text Editor",
-      "description": "A clean, distraction-free Svelte text editor focused on a minimal writing UI.",
-      "url": "https://github.com/joan-code6/clean-svelte-based-text-editor",
-      "applicationCategory": "UI"
+      "description": "Python CLI for saving SSH sessions and connecting to them by name.",
+      "url": "https://pypi.org/project/qssh/",
+      "sameAs": ["https://github.com/joan-code6/qssh"],
+      "applicationCategory": "DeveloperApplication"
     }
   ]
 }

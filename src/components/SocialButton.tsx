@@ -1,16 +1,16 @@
 import { motion } from 'framer-motion';
-import { SiGithub, SiDiscord, SiWikipedia } from 'react-icons/si';
+import { SiGithub, SiDiscord } from 'react-icons/si';
 import { MdEmail } from 'react-icons/md';
 
 type Props = {
   name: string;
   url: string;
-  type: 'github' | 'discord' | 'email' | 'wikipedia';
+  type: 'github' | 'discord' | 'email';
   delay?: number;
 };
 
 export default function SocialButton({ name, url, type, delay = 0 }: Props) {
-  const IconComponent = type === 'github' ? SiGithub : type === 'discord' ? SiDiscord : type === 'wikipedia' ? SiWikipedia : MdEmail;
+  const IconComponent = type === 'github' ? SiGithub : type === 'discord' ? SiDiscord : MdEmail;
 
   return (
     <motion.a

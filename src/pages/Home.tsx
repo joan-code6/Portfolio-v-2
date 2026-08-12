@@ -13,11 +13,13 @@ const Home = () => {
     <>
       <Helmet>
         <title>Bennet Joan Wegener | Developer &amp; Portfolio</title>
-        <meta name="description" content="Bennet Joan Wegener (joan-code) — German student developer building Zen AI, qssh, Voice-Guard, and more. Explore my open source portfolio." />
+        <meta name="description" content="Bennet Joan Wegener (joan-code) is a German student developer building LANIS for Schulportal Hessen, Zen AI, web platforms, developer tools, and hardware projects." />
+        <link rel="canonical" href="https://joancode.dev/" />
         <meta property="og:title" content="Bennet Joan Wegener | Developer &amp; Portfolio" />
-        <meta property="og:description" content="Student developer from Germany building open source AI tools, CLI apps, audio ML models, Minecraft mods, and more." />
+        <meta property="og:description" content="Student developer from Germany building useful full-stack systems, AI research projects, and hardware experiments." />
+        <meta property="og:url" content="https://joancode.dev/" />
         <meta name="twitter:title" content="Bennet Joan Wegener | Developer &amp; Portfolio" />
-        <meta name="twitter:description" content="Student developer from Germany building open source AI tools, CLI apps, audio ML models, Minecraft mods, and more." />
+        <meta name="twitter:description" content="LANIS, award-winning Zen AI, production web platforms, developer tools, and hardware experiments." />
       </Helmet>
     <div className="home-container">
       {/* Animated background */}
@@ -57,7 +59,7 @@ const Home = () => {
             >
               <img 
                 src="https://avatars.githubusercontent.com/u/172996447" 
-                alt="Profile"
+                alt="Bennet Joan Wegener"
                 className="profile-img"
               />
             </motion.div>
@@ -71,6 +73,10 @@ const Home = () => {
             >
               <h1 className="name">Bennet Joan Wegener</h1>
               <p className="handle">joan-code he/him</p>
+              <p className="profile-summary">
+                Student developer building useful full-stack systems, AI research projects, and
+                hardware experiments.
+              </p>
             </motion.div>
 
             {/* Info section */}
@@ -86,11 +92,11 @@ const Home = () => {
               </div>
               <div className="info-item">
                 <span className="info-label">Timezone</span>
-                <span className="info-value">CET (UTC+1)</span>
+                <span className="info-value">Europe/Berlin</span>
               </div>
               <div className="info-item">
                 <span className="info-label">School</span>
-                <span className="info-value">Adolf Reichwein Gymnasium Heusenstamm</span>
+                <span className="info-value">Adolf-Reichwein-Gymnasium Heusenstamm</span>
               </div>
             </motion.div>
           </div>
@@ -141,31 +147,41 @@ const Home = () => {
                   { name: 'GitHub', url: 'https://github.com/joan-code6', type: 'github' },
                   { name: 'Discord', url: 'https://discord.gg/HADC4eBJHR', type: 'discord' },
                   { name: 'Email', url: 'mailto:bennet-wegener@web.de', type: 'email' },
-                  { name: 'Wikipedia', url: 'https://en.wikipedia.org/wiki/Joke', type: 'wikipedia' },
                 ].map((social, index) => (
                   <SocialButton
                     key={social.name}
                     name={social.name}
                     url={social.url}
-                    type={social.type as 'github' | 'discord' | 'email' | 'wikipedia'}
+                    type={social.type as 'github' | 'discord' | 'email'}
                     delay={0.8 + index * 0.1}
                   />
                 ))}
               </div>
             </motion.div>
 
-            {/* Portfolio button */}
-            <motion.button
-              className="portfolio-btn"
-              onClick={() => navigate('/portfolio')}
+            <motion.div
+              className="home-actions"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9, duration: 0.5 }}
-              whileHover={{ scale: 1.02, borderColor: "rgba(255, 255, 255, 0.4)" }}
-              whileTap={{ scale: 0.98 }}
             >
-              View Portfolio →
-            </motion.button>
+              <motion.button
+                className="portfolio-btn"
+                onClick={() => navigate('/portfolio')}
+                whileHover={{ scale: 1.02, borderColor: 'rgba(255, 255, 255, 0.4)' }}
+                whileTap={{ scale: 0.98 }}
+              >
+                View projects →
+              </motion.button>
+              <motion.button
+                className="portfolio-btn media-btn"
+                onClick={() => navigate('/media')}
+                whileHover={{ scale: 1.02, borderColor: 'rgba(167, 139, 250, 0.65)' }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Press &amp; recognition →
+              </motion.button>
+            </motion.div>
           </div>
         </div>
       </motion.div>
@@ -205,4 +221,3 @@ const Home = () => {
 };
 
 export default Home;
-
