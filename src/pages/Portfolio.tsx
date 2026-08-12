@@ -13,7 +13,6 @@ type ProjectLink = {
 
 type Project = {
   title: string;
-  category: string;
   timeline: string;
   description: string;
   note?: string;
@@ -24,7 +23,6 @@ type Project = {
 const projects: Project[] = [
   {
     title: 'LANIS for Schulportal Hessen',
-    category: 'Full-stack platform',
     timeline: 'Building and maintaining it since 2025',
     description:
       'An unofficial, faster way to use Schulportal Hessen. I build and maintain the Python client, cached REST API, and responsive PWA for messages, courses, homework, files, calendars, substitution plans, and timetables.',
@@ -39,7 +37,6 @@ const projects: Project[] = [
   },
   {
     title: 'Zen AI',
-    category: 'Award-winning research project',
     timeline: 'Built from 2025 to 2026',
     description:
       'A cross-platform personal AI assistant whose trigger-word memory retrieves only relevant notes instead of flooding the model with every saved detail. I built the backend, web, desktop, mobile, CLI, email, calendar, MCP, and e-ink integrations.',
@@ -53,7 +50,6 @@ const projects: Project[] = [
   },
   {
     title: 'OC Forms',
-    category: 'Production workflow',
     timeline: 'In production since 2026',
     description:
       'The application and review system for OutCraft Minecraft events. Players apply through Discord OAuth; moderators claim and score applications; admins resolve conflicts, manage roles, inspect audit logs, and export the final whitelist.',
@@ -66,7 +62,6 @@ const projects: Project[] = [
   },
   {
     title: 'Broccoli',
-    category: 'Team hackathon build',
     timeline: 'Built at Horizons Europa in Berlin · 2026',
     description:
       'A competitive multiplayer virtual-pet game built with my team at Hack Club’s Horizons Europa hackathon in Berlin. Physical NFC chips feed and care for two on-screen broccoli pets while the game tracks their growth.',
@@ -83,7 +78,6 @@ const projects: Project[] = [
   },
   {
     title: 'Smart Garden Irrigation',
-    category: 'Hardware + software',
     timeline: 'Running at home since 2026',
     description:
       'The system that waters my garden for real: an ESP32-C3 controls five valves through a Raspberry Pi and MQTT, while a FastAPI dashboard handles schedules, history, and manual control.',
@@ -96,7 +90,6 @@ const projects: Project[] = [
   },
   {
     title: 'qssh',
-    category: 'Everyday utility',
     timeline: 'Stable release',
     description:
       'A small Python CLI I still rely on: save an SSH session once, then connect by name with a single command. It supports password and key-based authentication and is published on PyPI.',
@@ -174,10 +167,6 @@ const Portfolio = () => {
                 transition={{ delay: reduceMotion ? 0 : index * 0.045, duration: 0.35 }}
                 whileHover={reduceMotion ? undefined : { y: -4 }}
               >
-                <div className="project-card-head">
-                  <span className="project-category">{project.category}</span>
-                </div>
-
                 <h2 className="project-title">{project.title}</h2>
                 <p className="project-description">{project.description}</p>
                 {project.note && <p className="project-note">{project.note}</p>}

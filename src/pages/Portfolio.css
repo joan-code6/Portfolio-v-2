@@ -22,20 +22,6 @@
   box-shadow: 0 16px 45px rgba(0, 0, 0, 0.3);
 }
 
-.project-card-head {
-  margin-bottom: 20px;
-}
-
-.project-category {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.66rem;
-  line-height: 1.45;
-  color: #aaa;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
 .project-title {
   margin: 0 0 12px;
   color: #fff;
