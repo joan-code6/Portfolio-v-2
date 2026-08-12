@@ -151,15 +151,8 @@ const Portfolio = () => {
             transition={{ duration: 0.45 }}
           >
             <nav className="content-nav" aria-label="Page navigation">
-              <button className="content-nav-button" type="button" onClick={() => navigate('/')}>
-                ← Back to Home
-              </button>
-              <button
-                className="content-nav-button content-nav-secondary"
-                type="button"
-                onClick={() => navigate('/media')}
-              >
-                Press →
+              <button className="content-back-link" type="button" onClick={() => navigate('/')}>
+                ← Home
               </button>
             </nav>
 

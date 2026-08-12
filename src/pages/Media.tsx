@@ -42,17 +42,6 @@ const mediaItems: MediaItem[] = [
     format: 'article',
   },
   {
-    date: 'April 2026',
-    machineDate: '2026-04-01',
-    source: 'Kreis Offenbach',
-    sourceKind: 'Regional school magazine',
-    title: 'Schule – In & Out, issue 24',
-    summary:
-      'Kreis Offenbach records Bennet’s second place at the Hessian Jugend forscht junior state final with Zen AI and the Informatics special prize from the University of Kassel.',
-    url: 'https://www.kreis-offenbach.de/PDF/Schule_In_Out_Ausgabe_24_April_2026_nicht_barrierefrei.PDF?Ext=PDF&ObjID=2491&ObjLa=1&ObjSvrID=4013&WTR=1',
-    format: 'pdf',
-  },
-  {
     date: 'March 2026',
     machineDate: '2026-03-20',
     source: 'University of Kassel',
@@ -85,17 +74,6 @@ const mediaItems: MediaItem[] = [
     url: 'https://arg-heusenstamm.de/news/entry/78-erfolgreich-bei-jugend-forscht/',
     format: 'article',
   },
-  {
-    date: 'April 2025',
-    machineDate: '2025-04-01',
-    source: 'Kreis Offenbach',
-    sourceKind: 'Regional school magazine',
-    title: 'Schule – In & Out, issue 20',
-    summary:
-      'Kreis Offenbach covers the successful ARG teams at Jugend forscht and identifies Bennet Wegener and Lev Popov as the developers of Bloom Assist.',
-    url: 'https://www.kreis-offenbach.de/loadDocument.phtml?Ext=PDF&FID=4013.879.1#page=15',
-    format: 'pdf',
-  },
 ];
 
 const featuredItem = mediaItems.find((item) => item.featured)!;
@@ -109,7 +87,7 @@ const structuredData = {
   name: 'Press and recognition — Bennet Joan Wegener',
   url: 'https://joancode.dev/media',
   description:
-    'Press articles, school news, and official records about Bennet Joan Wegener, Zen AI, Bloom Assist, and Jugend forscht.',
+    'Press articles, official records, and civic engagement connected to Bennet Joan Wegener, Zen AI, Bloom Assist, Jugend forscht, and KiJuPa Heusenstamm.',
   about: {
     '@type': 'Person',
     name: 'Bennet Joan Wegener',
@@ -142,11 +120,11 @@ const Media = () => {
         <title>Press &amp; Recognition | Bennet Joan Wegener</title>
         <meta
           name="description"
-          content="Press coverage and official records about Bennet Joan Wegener, Zen AI, Bloom Assist, and his Jugend forscht awards in 2025 and 2026."
+          content="Press coverage, official records, and civic engagement connected to Bennet Joan Wegener, Zen AI, Jugend forscht, and KiJuPa Heusenstamm."
         />
         <meta
           name="keywords"
-          content="Bennet Joan Wegener, Bennet Wegener, Zen AI, Jugend forscht, Adolf-Reichwein-Gymnasium, Heusenstamm, Bloom Assist, Frankfurter Rundschau"
+          content="Bennet Joan Wegener, Bennet Wegener, Zen AI, Jugend forscht, KiJuPa Heusenstamm, Kinder- und Jugendparlament, Adolf-Reichwein-Gymnasium, Bloom Assist, Frankfurter Rundschau"
         />
         <link rel="canonical" href="https://joancode.dev/media" />
         <meta property="og:type" content="profile" />
@@ -174,15 +152,8 @@ const Media = () => {
             transition={{ duration: 0.45 }}
           >
             <nav className="content-nav" aria-label="Page navigation">
-              <button className="content-nav-button" type="button" onClick={() => navigate('/')}>
-                ← Back to Home
-              </button>
-              <button
-                className="content-nav-button content-nav-secondary"
-                type="button"
-                onClick={() => navigate('/portfolio')}
-              >
-                Projects →
+              <button className="content-back-link" type="button" onClick={() => navigate('/')}>
+                ← Home
               </button>
             </nav>
 
@@ -203,6 +174,19 @@ const Media = () => {
                 <span className="recognition-year">2025</span>
                 <strong>Bloom Assist</strong>
                 <span className="recognition-detail">3rd place Hessen · two special prizes</span>
+              </p>
+              <p>
+                <span className="recognition-year">2024–26</span>
+                <strong>KiJuPa</strong>
+                <a
+                  className="recognition-detail recognition-link"
+                  href="https://www.heusenstamm.de/de/buerger-und-stadt/verwaltung-und-politik/kinder--und-jugendparlament"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Elected to Heusenstamm’s first Kinder- und Jugendparlament
+                  <ArrowUpRight size={13} aria-hidden="true" />
+                </a>
               </p>
             </div>
           </motion.header>

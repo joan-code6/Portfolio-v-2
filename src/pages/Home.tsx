@@ -73,10 +73,6 @@ const Home = () => {
             >
               <h1 className="name">Bennet Joan Wegener</h1>
               <p className="handle">joan-code he/him</p>
-              <p className="profile-summary">
-                Student developer building useful full-stack systems, AI research projects, and
-                hardware experiments.
-              </p>
             </motion.div>
 
             {/* Info section */}

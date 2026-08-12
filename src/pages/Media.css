@@ -11,7 +11,7 @@
 
 .recognition-lines p {
   display: grid;
-  grid-template-columns: 48px 110px minmax(0, 1fr);
+  grid-template-columns: 60px 110px minmax(0, 1fr);
   gap: 12px;
   margin: 0;
   padding: 11px 0;
@@ -28,10 +28,24 @@
   color: #808080;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.74rem;
+  white-space: nowrap;
 }
 
 .recognition-lines .recognition-detail {
   color: #888;
+}
+
+.recognition-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  gap: 5px;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.recognition-link:hover {
+  color: #bbb;
 }
 
 .recognition-lines strong {
@@ -269,7 +283,7 @@
 
 @media (max-width: 600px) {
   .recognition-lines p {
-    grid-template-columns: 42px minmax(0, 1fr);
+    grid-template-columns: 58px minmax(0, 1fr);
     gap: 5px 10px;
   }
 
