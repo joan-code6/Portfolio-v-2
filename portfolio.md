@@ -4,19 +4,19 @@ These projects are selected for their depth, usefulness, and real-world use.
 
 ## LANIS for Schulportal Hessen
 
-An unofficial, faster way to use Schulportal Hessen. I build and maintain the Python client, cached REST API, and responsive PWA for messages, courses, homework, files, calendars, substitution plans, and timetables.
+An unofficial, faster way to use Schulportal Hessen. I have been building and maintaining the Python client, cached REST API, and responsive PWA for messages, courses, homework, files, calendars, substitution plans, and timetables since 2025.
 
 [Live app](https://lanis.arg-server.de) · [API documentation](https://lanis-backend.joancode.dev/documentation) · [API source](https://github.com/joan-code6/lanis_api) · [UI source](https://github.com/joan-code6/lanis_ui)
 
 ## Zen AI
 
-A cross-platform personal AI assistant whose trigger-word memory retrieves only relevant notes instead of sending every saved detail to the model. Zen AI won first place regionally, then second place in Mathematics/Computer Science and the University of Kassel Informatics special prize at Jugend forscht junior Hessen 2026.
+A cross-platform personal AI assistant built from 2025 to 2026 whose trigger-word memory retrieves only relevant notes instead of sending every saved detail to the model. Zen AI won first place regionally, then second place in Mathematics/Computer Science and the University of Kassel Informatics special prize at Jugend forscht junior Hessen 2026.
 
 [Live web app](https://zen.arg-server.de) · [Project and benchmark](https://joancode.dev/zen_ai/) · [Public source](https://github.com/joan-code6/zen_ai_public)
 
 ## OC Forms
 
-The production application and review system for OutCraft Minecraft events. Built for a community of 11,000 members, OC Forms has handled more than 2,500 individual applications. It combines Discord OAuth, autosave, moderator scoring, conflict resolution, role management, audit logs, analytics, and whitelist export on an Appwrite backend with 23 server functions.
+The production application and review system for OutCraft Minecraft events, in production since 2026. Built for a community of 11,000 members, OC Forms has handled more than 2,500 individual applications. It combines Discord OAuth, autosave, moderator scoring, conflict resolution, role management, audit logs, analytics, and whitelist export on an Appwrite backend with 23 server functions.
 
 [Live site](https://apply.outcraft.net) · [Source](https://github.com/joan-code6/oc-forms)
 
@@ -28,7 +28,7 @@ A competitive multiplayer virtual-pet game built with my team at Hack Club's Hor
 
 ## Smart Garden Irrigation
 
-A real five-zone garden watering system. An ESP32-C3 controls the valves through a Raspberry Pi and MQTT; a FastAPI dashboard handles weather-aware schedules, manual control, and history, with Discord and Google Home integrations.
+A real five-zone garden watering system running at home since 2026. An ESP32-C3 controls the valves through a Raspberry Pi and MQTT; a FastAPI dashboard handles weather-aware schedules, manual control, and history, with Discord and Google Home integrations.
 
 [Live dashboard](https://garten-bewaesserung.joancode.dev) · [Source](https://github.com/joan-code6/garten-bewaesserung)
 
