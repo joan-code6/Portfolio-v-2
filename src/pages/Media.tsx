@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowUpRight, Newspaper } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import './ContentPage.css';
 import './Media.css';
@@ -9,7 +9,6 @@ type MediaItem = {
   date: string;
   machineDate: string;
   source: string;
-  sourceKind: string;
   title: string;
   summary: string;
   url: string;
@@ -22,7 +21,6 @@ const mediaItems: MediaItem[] = [
     date: '13 February 2026',
     machineDate: '2026-02-13',
     source: 'Frankfurter Rundschau',
-    sourceKind: 'Newspaper feature',
     title: 'Junge Forschende in Rhein-Main: Schlauer, als Trump erlaubt',
     summary:
       'The FR reports from the Jugend forscht regional competition at Frankfurt’s Senckenberg Museum, photographs Bennet presenting Zen AI, and explains how its selective memory supplies an AI with only the information that matters.',
@@ -34,7 +32,6 @@ const mediaItems: MediaItem[] = [
     date: '23 February 2026',
     machineDate: '2026-02-23',
     source: 'Adolf-Reichwein-Gymnasium',
-    sourceKind: 'School news',
     title: 'Rekordteilnahme bei Jugend forscht',
     summary:
       'The school’s report describes Zen AI and Bennet’s first-place finish in Mathematics/Computer Science at Jugend forscht junior Rhein-Main West, which qualified him for the Hessian state competition.',
@@ -45,7 +42,6 @@ const mediaItems: MediaItem[] = [
     date: 'March 2026',
     machineDate: '2026-03-20',
     source: 'University of Kassel',
-    sourceKind: 'Official competition program',
     title: 'Zen AI in the Jugend forscht junior Hessen 2026 program',
     summary:
       'The official state-competition program lists Bennet Joan Wegener and publishes the Zen AI abstract: a trigger-word note database designed to solve a “needle in a haystack” context problem.',
@@ -56,7 +52,6 @@ const mediaItems: MediaItem[] = [
     date: '2 April 2025',
     machineDate: '2025-04-02',
     source: 'Adolf-Reichwein-Gymnasium',
-    sourceKind: 'School news',
     title: 'Landesentscheid bei Jugend forscht',
     summary:
       'The school reports that Bennet Wegener and Lev Popov took third place in Mathematics/Computer Science at the Hessian state final with Bloom Assist and received two additional special prizes.',
@@ -67,7 +62,6 @@ const mediaItems: MediaItem[] = [
     date: '9 March 2025',
     machineDate: '2025-03-09',
     source: 'Adolf-Reichwein-Gymnasium',
-    sourceKind: 'School news',
     title: 'Erfolgreich bei „jugend forscht“',
     summary:
       'The regional-competition report introduces Bloom Assist, the plant-care app and moisture sensor built by Bennet Wegener and Lev Popov, and notes its award as the best interdisciplinary project.',
@@ -75,26 +69,24 @@ const mediaItems: MediaItem[] = [
     format: 'article',
   },
   {
-    date: '20 August 2024',
-    machineDate: '2024-08-20',
-    source: 'Offenbach-Post',
-    sourceKind: 'Local newspaper',
-    title: 'Kinder- und Jugendparlament wird in Heusenstamm gegründet',
+    date: '6 May 2026',
+    machineDate: '2026-05-06',
+    source: 'City of Heusenstamm',
+    title: 'KiJuPa visits Police Headquarters Southeast Hesse',
     summary:
-      'The Offenbach-Post explains how Heusenstamm’s first elected youth parliament was created, how its members are chosen, and which rights they have in local politics.',
-    url: 'https://www.op-online.de/region/heusenstamm/kinder-und-jugendparlament-wird-in-heusenstamm-gegruendet-93250702.html',
+      'The member group visited Police Headquarters Southeast Hesse, discussed how young people experience public safety, and contributed ideas for future prevention work.',
+    url: 'https://www.heusenstamm.de/de/buerger-und-stadt/pressecenter/aktuelle-meldungen/detail/item/9635/ein-blick-hinter-die-kulissen-kijupa-heusenstamm-besucht-polizeipraesidium-suedosthessen',
     format: 'article',
   },
   {
-    date: 'October 2024',
-    machineDate: '2024-10-09',
+    date: '1 July 2025',
+    machineDate: '2025-07-01',
     source: 'City of Heusenstamm',
-    sourceKind: 'Municipal magazine',
-    title: 'Heusenstamms Jüngste engagieren sich für ihre Stadt',
+    title: 'KiJuPa experiences politics at the Hessian Parliament',
     summary:
-      'The city’s municipal magazine documents the first KiJuPa’s formation and the role of its elected members in shaping local decisions.',
-    url: 'https://www.heusenstamm.de/Portals/0/Resources/6490/Downloads/Bg-Magazin-10-2024-final-web.pdf#page=5',
-    format: 'pdf',
+      'The member group attended a plenary session at the Hessian Parliament and discussed state politics with representative Christoph Mikuschek.',
+    url: 'https://www.heusenstamm.de/de/buerger-und-stadt/pressecenter/aktuelle-meldungen/detail/item/8380/kijupa-politik-live-erleben-ein-spannender-tag-im-hessischen-landtag',
+    format: 'article',
   },
 ];
 
@@ -181,7 +173,7 @@ const Media = () => {
               </p>
               <nav className="content-nav" aria-label="Page navigation">
                 <button className="content-back-link" type="button" onClick={() => navigate('/')}>
-                  Back home
+                  ← Home
                 </button>
               </nav>
             </div>
@@ -218,9 +210,6 @@ const Media = () => {
             whileHover={reduceMotion ? undefined : { y: -3 }}
           >
             <div className="media-featured-heading">
-              <span className="media-featured-label">
-                <Newspaper size={15} aria-hidden="true" /> Featured coverage
-              </span>
               <p className="media-meta">
                 <span>{featuredItem.source}</span>
                 <time dateTime={featuredItem.machineDate}>{featuredItem.date}</time>
@@ -258,7 +247,6 @@ const Media = () => {
                   <h3>{item.title}</h3>
                   <p className="media-card-summary">{item.summary}</p>
                   <div className="media-card-footer">
-                    <span>{item.sourceKind}</span>
                     <strong>{item.format === 'pdf' ? 'Open document' : 'Read article'} <ArrowUpRight size={15} aria-hidden="true" /></strong>
                   </div>
                 </motion.a>

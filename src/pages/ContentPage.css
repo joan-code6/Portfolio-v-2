@@ -62,17 +62,17 @@
   padding: 4px 0;
   border: 0;
   background: transparent;
-  color: #707070;
+  color: #aaa;
   font: inherit;
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 0.84rem;
+  font-weight: 600;
   cursor: pointer;
   text-decoration: none;
   transition: color 160ms ease;
 }
 
 .content-back-link:hover {
-  color: #b5b5b5;
+  color: #fff;
 }
 
 .content-title {

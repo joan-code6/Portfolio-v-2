@@ -22,3 +22,4 @@ My main work includes LANIS for Schulportal Hessen, OC Forms, and a smart garden
 - [Press and recognition](/media)
 - [GitHub](https://github.com/joan-code6)
 - [Email](mailto:bennet-wegener@web.de)
+- [Wikipedia](https://en.wikipedia.org/wiki/Joke)

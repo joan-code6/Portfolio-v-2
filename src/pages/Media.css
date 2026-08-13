@@ -60,19 +60,6 @@
   box-shadow: 0 16px 45px rgba(0, 0, 0, 0.3);
 }
 
-.media-featured-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  margin-bottom: 22px;
-  color: #aaa;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.67rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
 .media-meta {
   display: flex;
   align-items: center;
@@ -185,12 +172,10 @@
 .media-card-footer {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 12px;
   margin-top: auto;
   padding-top: 20px;
-  color: #808080;
-  font-size: 0.69rem;
 }
 
 .media-card-footer strong {
