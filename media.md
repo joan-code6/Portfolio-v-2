@@ -15,6 +15,6 @@ Independent reporting, school coverage, and official records about my Jugend for
 
 ## Civic engagement
 
-- **2024–2026:** Elected to Heusenstamm's first [Kinder- und Jugendparlament (KiJuPa)](https://www.heusenstamm.de/de/buerger-und-stadt/verwaltung-und-politik/kinder--und-jugendparlament), the city's nonpartisan youth representation.
-
-[Back to the portfolio](/portfolio)
+- **2024–2026:** Elected to Heusenstamm's first Kinder- und Jugendparlament (KiJuPa), the city's nonpartisan youth representation.
+- **City of Heusenstamm, October 2024:** [Heusenstamms Jüngste engagieren sich für ihre Stadt](https://www.heusenstamm.de/Portals/0/Resources/6490/Downloads/Bg-Magazin-10-2024-final-web.pdf#page=5). The municipal magazine documents the first KiJuPa's formation and the role of its elected members.
+- **Offenbach-Post, 20 August 2024:** [Kinder- und Jugendparlament wird in Heusenstamm gegründet](https://www.op-online.de/region/heusenstamm/kinder-und-jugendparlament-wird-in-heusenstamm-gegruendet-93250702.html). The local newspaper explains how members are elected and which rights the youth parliament has in local politics.
