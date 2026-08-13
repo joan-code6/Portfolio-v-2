@@ -38,4 +38,4 @@ A small Python CLI I still rely on: save an SSH session once, then connect by na
 
 [PyPI](https://pypi.org/project/qssh/) · [Source](https://github.com/joan-code6/qssh)
 
-More experiments and tools are available on [GitHub](https://github.com/joan-code6). See also [press and recognition](/media).
+More experiments and tools are available on [GitHub](https://github.com/joan-code6). See also [press](/media).
