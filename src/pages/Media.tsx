@@ -74,6 +74,28 @@ const mediaItems: MediaItem[] = [
     url: 'https://arg-heusenstamm.de/news/entry/78-erfolgreich-bei-jugend-forscht/',
     format: 'article',
   },
+  {
+    date: '20 August 2024',
+    machineDate: '2024-08-20',
+    source: 'Offenbach-Post',
+    sourceKind: 'Local newspaper',
+    title: 'Kinder- und Jugendparlament wird in Heusenstamm gegründet',
+    summary:
+      'The Offenbach-Post explains how Heusenstamm’s first elected youth parliament was created, how its members are chosen, and which rights they have in local politics.',
+    url: 'https://www.op-online.de/region/heusenstamm/kinder-und-jugendparlament-wird-in-heusenstamm-gegruendet-93250702.html',
+    format: 'article',
+  },
+  {
+    date: 'October 2024',
+    machineDate: '2024-10-09',
+    source: 'City of Heusenstamm',
+    sourceKind: 'Municipal magazine',
+    title: 'Heusenstamms Jüngste engagieren sich für ihre Stadt',
+    summary:
+      'The city’s municipal magazine documents the first KiJuPa’s formation and the role of its elected members in shaping local decisions.',
+    url: 'https://www.heusenstamm.de/Portals/0/Resources/6490/Downloads/Bg-Magazin-10-2024-final-web.pdf#page=5',
+    format: 'pdf',
+  },
 ];
 
 const featuredItem = mediaItems.find((item) => item.featured)!;
@@ -159,7 +181,7 @@ const Media = () => {
               </p>
               <nav className="content-nav" aria-label="Page navigation">
                 <button className="content-back-link" type="button" onClick={() => navigate('/')}>
-                  ← Home
+                  Back home
                 </button>
               </nav>
             </div>
@@ -178,15 +200,9 @@ const Media = () => {
               <p>
                 <span className="recognition-year">2024–26</span>
                 <strong>KiJuPa</strong>
-                <a
-                  className="recognition-detail recognition-link"
-                  href="https://www.heusenstamm.de/de/buerger-und-stadt/verwaltung-und-politik/kinder--und-jugendparlament"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <span className="recognition-detail">
                   Elected to Heusenstamm’s first Kinder- und Jugendparlament
-                  <ArrowUpRight size={13} aria-hidden="true" />
-                </a>
+                </span>
               </p>
             </div>
           </motion.header>
@@ -219,11 +235,7 @@ const Media = () => {
 
           <section className="media-archive" aria-labelledby="archive-title">
             <div className="media-section-heading">
-              <div>
-                <p className="media-section-label">Source archive</p>
-                <h2 id="archive-title">Articles &amp; official records</h2>
-              </div>
-              <p>Original publisher links</p>
+              <h2 id="archive-title">Articles &amp; official records</h2>
             </div>
 
             <div className="media-grid">
@@ -253,11 +265,6 @@ const Media = () => {
               ))}
             </div>
           </section>
-
-          <footer className="media-footer">
-            <span>Know of another article that belongs here?</span>
-            <a href="mailto:bennet-wegener@web.de">Send me the link →</a>
-          </footer>
         </div>
       </main>
     </>

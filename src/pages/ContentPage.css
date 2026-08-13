@@ -53,8 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex: 0 0 auto;
-  margin: 0 0 5px;
+  margin: 0;
 }
 
 .content-back-link {
@@ -95,9 +94,9 @@
 
 .content-lead {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 28px;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .content-page a:focus-visible,
@@ -124,13 +123,7 @@
   }
 
   .content-lead {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .content-nav {
-    margin: 0;
+    gap: 10px;
   }
 }
 

@@ -151,7 +151,7 @@ const Portfolio = () => {
               </p>
               <nav className="content-nav" aria-label="Page navigation">
                 <button className="content-back-link" type="button" onClick={() => navigate('/')}>
-                  ← Home
+                  Back home
                 </button>
               </nav>
             </div>
