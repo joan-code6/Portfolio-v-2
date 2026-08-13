@@ -49,26 +49,6 @@ const mediaItems: MediaItem[] = [
     format: 'pdf',
   },
   {
-    date: '2 April 2025',
-    machineDate: '2025-04-02',
-    source: 'Adolf-Reichwein-Gymnasium',
-    title: 'Landesentscheid bei Jugend forscht',
-    summary:
-      'The school reports that Bennet Wegener and Lev Popov took third place in Mathematics/Computer Science at the Hessian state final with Bloom Assist and received two additional special prizes.',
-    url: 'https://arg-heusenstamm.de/news/entry/79-landesentscheid-bei-jugend-forscht/',
-    format: 'article',
-  },
-  {
-    date: '9 March 2025',
-    machineDate: '2025-03-09',
-    source: 'Adolf-Reichwein-Gymnasium',
-    title: 'Erfolgreich bei „jugend forscht“',
-    summary:
-      'The regional-competition report introduces Bloom Assist, the plant-care app and moisture sensor built by Bennet Wegener and Lev Popov, and notes its award as the best interdisciplinary project.',
-    url: 'https://arg-heusenstamm.de/news/entry/78-erfolgreich-bei-jugend-forscht/',
-    format: 'article',
-  },
-  {
     date: '6 May 2026',
     machineDate: '2026-05-06',
     source: 'City of Heusenstamm',
@@ -98,10 +78,10 @@ const archiveItems = mediaItems
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Press and recognition for Bennet Joan Wegener',
+  name: 'Press coverage for Bennet Joan Wegener',
   url: 'https://joancode.dev/media',
   description:
-    'Press articles, official records, and civic engagement connected to Bennet Joan Wegener, Zen AI, Bloom Assist, Jugend forscht, and KiJuPa Heusenstamm.',
+    'Press articles, official records, and civic engagement connected to Bennet Joan Wegener, Zen AI, Jugend forscht, and KiJuPa Heusenstamm.',
   about: {
     '@type': 'Person',
     name: 'Bennet Joan Wegener',
@@ -131,24 +111,24 @@ const Media = () => {
   return (
     <>
       <Helmet>
-        <title>Press &amp; Recognition | Bennet Joan Wegener</title>
+        <title>Press | Bennet Joan Wegener</title>
         <meta
           name="description"
           content="Press coverage, official records, and civic engagement connected to Bennet Joan Wegener, Zen AI, Jugend forscht, and KiJuPa Heusenstamm."
         />
         <meta
           name="keywords"
-          content="Bennet Joan Wegener, Bennet Wegener, Zen AI, Jugend forscht, KiJuPa Heusenstamm, Kinder- und Jugendparlament, Adolf-Reichwein-Gymnasium, Bloom Assist, Frankfurter Rundschau"
+          content="Bennet Joan Wegener, Bennet Wegener, Zen AI, Jugend forscht, KiJuPa Heusenstamm, Kinder- und Jugendparlament, Adolf-Reichwein-Gymnasium, Frankfurter Rundschau"
         />
         <link rel="canonical" href="https://joancode.dev/media" />
         <meta property="og:type" content="profile" />
-        <meta property="og:title" content="Press & Recognition | Bennet Joan Wegener" />
+        <meta property="og:title" content="Press | Bennet Joan Wegener" />
         <meta
           property="og:description"
-          content="Independent coverage and official records of Zen AI, Bloom Assist, and Jugend forscht awards."
+          content="Independent coverage and official records of Zen AI and Jugend forscht awards."
         />
         <meta property="og:url" content="https://joancode.dev/media" />
-        <meta name="twitter:title" content="Press & Recognition | Bennet Joan Wegener" />
+        <meta name="twitter:title" content="Press | Bennet Joan Wegener" />
         <meta
           name="twitter:description"
           content="Press coverage and official records of Bennet Joan Wegener’s Jugend forscht projects."
@@ -170,7 +150,7 @@ const Media = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45 }}
           >
-            <h1 className="content-title">Press &amp; recognition</h1>
+            <h1 className="content-title">Press</h1>
             <div className="content-lead">
               <p className="content-intro">
                 Independent reporting, school coverage, and official competition records about my
@@ -183,11 +163,6 @@ const Media = () => {
                 <span className="recognition-year">2026</span>
                 <strong>Zen AI</strong>
                 <span className="recognition-detail">Regional winner · 2nd place Hessen · Informatics special prize</span>
-              </p>
-              <p>
-                <span className="recognition-year">2025</span>
-                <strong>Bloom Assist</strong>
-                <span className="recognition-detail">3rd place Hessen · two special prizes</span>
               </p>
               <p>
                 <span className="recognition-year">2024–26</span>

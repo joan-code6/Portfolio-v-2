@@ -176,7 +176,7 @@ const Home = () => {
                 whileHover={{ x: 2 }}
                 whileTap={{ scale: 0.97 }}
               >
-                Press &amp; recognition
+                Press
               </motion.button>
             </motion.div>
           </div>
