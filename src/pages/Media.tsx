@@ -49,6 +49,26 @@ const mediaItems: MediaItem[] = [
     format: 'pdf',
   },
   {
+    date: '2 April 2025',
+    machineDate: '2025-04-02',
+    source: 'Adolf-Reichwein-Gymnasium',
+    title: 'Landesentscheid bei Jugend forscht',
+    summary:
+      'The school reports Bloom Assist’s third-place finish in Mathematics/Computer Science at the Hessian state final and two additional special prizes.',
+    url: 'https://arg-heusenstamm.de/news/entry/79-landesentscheid-bei-jugend-forscht/',
+    format: 'article',
+  },
+  {
+    date: '9 March 2025',
+    machineDate: '2025-03-09',
+    source: 'Adolf-Reichwein-Gymnasium',
+    title: 'Erfolgreich bei „jugend forscht“',
+    summary:
+      'The regional-competition report introduces Bloom Assist, its plant-care app and moisture sensor, and its award as the best interdisciplinary project.',
+    url: 'https://arg-heusenstamm.de/news/entry/78-erfolgreich-bei-jugend-forscht/',
+    format: 'article',
+  },
+  {
     date: '6 May 2026',
     machineDate: '2026-05-06',
     source: 'City of Heusenstamm',
@@ -81,7 +101,7 @@ const structuredData = {
   name: 'Press coverage for Bennet Joan Wegener',
   url: 'https://joancode.dev/media',
   description:
-    'Press articles, official records, and civic engagement connected to Bennet Joan Wegener, Zen AI, Jugend forscht, and KiJuPa Heusenstamm.',
+    'Press articles, official records, and civic engagement connected to Bennet Joan Wegener, Zen AI, Bloom Assist, Jugend forscht, and KiJuPa Heusenstamm.',
   about: {
     '@type': 'Person',
     name: 'Bennet Joan Wegener',
@@ -118,14 +138,14 @@ const Media = () => {
         />
         <meta
           name="keywords"
-          content="Bennet Joan Wegener, Bennet Wegener, Zen AI, Jugend forscht, KiJuPa Heusenstamm, Kinder- und Jugendparlament, Adolf-Reichwein-Gymnasium, Frankfurter Rundschau"
+          content="Bennet Joan Wegener, Bennet Wegener, Zen AI, Jugend forscht, KiJuPa Heusenstamm, Kinder- und Jugendparlament, Adolf-Reichwein-Gymnasium, Bloom Assist, Frankfurter Rundschau"
         />
         <link rel="canonical" href="https://joancode.dev/media" />
         <meta property="og:type" content="profile" />
         <meta property="og:title" content="Press | Bennet Joan Wegener" />
         <meta
           property="og:description"
-          content="Independent coverage and official records of Zen AI and Jugend forscht awards."
+          content="Independent coverage and official records of Zen AI, Bloom Assist, and Jugend forscht awards."
         />
         <meta property="og:url" content="https://joancode.dev/media" />
         <meta name="twitter:title" content="Press | Bennet Joan Wegener" />
@@ -163,6 +183,11 @@ const Media = () => {
                 <span className="recognition-year">2026</span>
                 <strong>Zen AI</strong>
                 <span className="recognition-detail">Regional winner · 2nd place Hessen · Informatics special prize</span>
+              </p>
+              <p>
+                <span className="recognition-year">2025</span>
+                <strong>Bloom Assist</strong>
+                <span className="recognition-detail">3rd place Hessen · two special prizes</span>
               </p>
               <p>
                 <span className="recognition-year">2024–26</span>
