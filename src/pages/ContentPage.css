@@ -53,7 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 0;
+  margin: 0 0 24px;
 }
 
 .content-back-link {
@@ -112,6 +112,10 @@
 
   .content-header {
     margin-bottom: 32px;
+  }
+
+  .content-nav {
+    margin-bottom: 18px;
   }
 
   .content-title {

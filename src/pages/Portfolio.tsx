@@ -137,6 +137,11 @@ const Portfolio = () => {
       <main className="content-page">
         <div className="content-page-bg" aria-hidden="true" />
         <div className="content-shell">
+          <nav className="content-nav" aria-label="Page navigation">
+            <button className="content-back-link" type="button" onClick={() => navigate('/')}>
+              Home
+            </button>
+          </nav>
           <motion.header
             className="content-header"
             initial={reduceMotion ? false : { opacity: 0, y: 18 }}
@@ -149,11 +154,6 @@ const Portfolio = () => {
                 I selected these projects for their depth, usefulness, and real-world use,
                 regardless of when I built them.
               </p>
-              <nav className="content-nav" aria-label="Page navigation">
-                <button className="content-back-link" type="button" onClick={() => navigate('/')}>
-                  ← Home
-                </button>
-              </nav>
             </div>
           </motion.header>
 

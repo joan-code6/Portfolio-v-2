@@ -159,6 +159,11 @@ const Media = () => {
       <main className="content-page">
         <div className="content-page-bg" aria-hidden="true" />
         <div className="content-shell">
+          <nav className="content-nav" aria-label="Page navigation">
+            <button className="content-back-link" type="button" onClick={() => navigate('/')}>
+              Home
+            </button>
+          </nav>
           <motion.header
             className="content-header media-header"
             initial={reduceMotion ? false : { opacity: 0, y: 18 }}
@@ -171,11 +176,6 @@ const Media = () => {
                 Independent reporting, school coverage, and official competition records about my
                 Jugend forscht projects and awards.
               </p>
-              <nav className="content-nav" aria-label="Page navigation">
-                <button className="content-back-link" type="button" onClick={() => navigate('/')}>
-                  ← Home
-                </button>
-              </nav>
             </div>
 
             <div className="recognition-lines" aria-label="Selected awards">

@@ -168,7 +168,7 @@ const Home = () => {
                 whileHover={{ scale: 1.02, borderColor: 'rgba(255, 255, 255, 0.4)' }}
                 whileTap={{ scale: 0.98 }}
               >
-                View Portfolio →
+                View Portfolio
               </motion.button>
               <motion.button
                 className="press-link"
@@ -176,7 +176,7 @@ const Home = () => {
                 whileHover={{ x: 2 }}
                 whileTap={{ scale: 0.97 }}
               >
-                Press &amp; recognition →
+                Press &amp; recognition
               </motion.button>
             </motion.div>
           </div>

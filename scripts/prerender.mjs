@@ -39,8 +39,8 @@ const pages = {
                 </div>
               </div>
               <nav class="home-actions" aria-label="Explore">
-                <a class="portfolio-btn" href="/portfolio">View Portfolio →</a>
-                <a class="press-link" href="/media">Press & recognition →</a>
+                <a class="portfolio-btn" href="/portfolio">View Portfolio</a>
+                <a class="press-link" href="/media">Press & recognition</a>
               </nav>
               <div class="social-links">
                 <a href="https://github.com/joan-code6" class="social-button">GitHub</a>
@@ -59,9 +59,10 @@ const pages = {
       'Selected projects by Bennet Joan Wegener: LANIS for Schulportal Hessen, award-winning Zen AI, OC Forms, Broccoli, smart garden irrigation, and qssh.',
     canonical: 'https://joancode.dev/portfolio',
     content: `      <main class="content-page"><div class="content-shell">
+        <nav class="content-nav" aria-label="Page navigation"><a class="content-back-link" href="/">Home</a></nav>
         <header class="content-header">
           <h1 class="content-title">My Portfolio</h1>
-          <div class="content-lead"><p class="content-intro">I selected these projects for their depth, usefulness, and real-world use, regardless of when I built them.</p><nav class="content-nav"><a class="content-back-link" href="/">← Home</a></nav></div>
+          <div class="content-lead"><p class="content-intro">I selected these projects for their depth, usefulness, and real-world use, regardless of when I built them.</p></div>
         </header>
         <section class="projects-grid" aria-label="Selected projects">
           <article class="project-card">
@@ -108,9 +109,10 @@ const pages = {
       'Press coverage, official records, and civic engagement connected to Bennet Joan Wegener, Zen AI, Jugend forscht, and KiJuPa Heusenstamm.',
     canonical: 'https://joancode.dev/media',
     content: `      <main class="content-page"><div class="content-shell">
+        <nav class="content-nav" aria-label="Page navigation"><a class="content-back-link" href="/">Home</a></nav>
         <header class="content-header media-header">
           <h1 class="content-title">Press &amp; recognition</h1>
-          <div class="content-lead"><p class="content-intro">Independent reporting, school coverage, and official competition records about my Jugend forscht projects and awards.</p><nav class="content-nav"><a class="content-back-link" href="/">← Home</a></nav></div>
+          <div class="content-lead"><p class="content-intro">Independent reporting, school coverage, and official competition records about my Jugend forscht projects and awards.</p></div>
           <div class="recognition-lines"><p><span class="recognition-year">2026</span><strong>Zen AI</strong><span class="recognition-detail">Regional winner · 2nd place Hessen · Informatics special prize</span></p><p><span class="recognition-year">2025</span><strong>Bloom Assist</strong><span class="recognition-detail">3rd place Hessen · two special prizes</span></p><p><span class="recognition-year">2024–26</span><strong>KiJuPa</strong><span class="recognition-detail">Elected to Heusenstamm’s first Kinder- und Jugendparlament</span></p></div>
         </header>
         <a class="media-featured" href="https://www.fr.de/frankfurt/junge-forschende-in-rhein-main-schlauer-als-trump-erlaubt-94169199.html">
